@@ -1,0 +1,71 @@
+﻿//-------------------
+//متغییر های سفارشی
+//-------------------
+$brandcolor-a: #104587;
+$brandcolor-b: #071c37;
+$brandcolor-c: #1d6fd5;
+$primary: $brandcolor-a;
+//-------------------
+//بکگراند
+//-------------------
+$body-bg: #fff;
+// بکگراند سکشن ها
+$sec-bg-light:#fff;
+$sec-bg-dark: #f7f7f7;
+$sec-bg-darker: #efefef;
+//-------------------
+// رنگ نوشته ها
+//-------------------
+$body-color: #1a1a1a;
+// رنگ نوشته ها سفارشی
+$txt-base: #1a1a1a;
+$txt-muted: #555555;
+$txt-faint: #888888;
+// رنگ نوشته ها ثابت سفارشی
+$txt-black-fixed: #1a1a1a;
+$txt-white-fixed: #efefef;
+$txt-gray-fixed: #7f7f7f;
+//-------------------
+// رنگ بوردر ها
+//-------------------
+$border-brand: $brandcolor-a;
+$border-strong: #0d6efd;
+$border-medium: #6c757d;
+$border-light: #ededed;
+//-------------------
+//رنک های اصلی
+//-------------------
+$secondary: #6c757d;
+$success: #4caf50;
+$info: #00bcd4;
+$warning: #ffc107;
+$danger: #f44336;
+//-------------------
+//دارک لایت
+//-------------------
+$light: #f8f9fa;
+$dark: #212529;
+//-------------------
+//گردی و فاصله
+//-------------------
+$border-radius: .15rem;
+$spacer: 1rem;
+//-------------------
+//Container widths
+//-------------------
+$container-max-widths: (
+    sm:540px, 
+    md:720px, 
+    lg:960px, 
+    xl:1140px, 
+    xxl:1320px);
+//-------------------
+//سوییچ‌ها
+//-------------------
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+//-------------------
+//صفحه شفاف پشت منوی داشبوردی
+//-------------------
+$overlay: rgba(80,80,80,.6);

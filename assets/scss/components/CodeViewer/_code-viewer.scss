@@ -1,0 +1,183 @@
+﻿.codeblock {
+    /* متغیرهای داخلی */
+    --cb-bg: #0e1116;
+    --cb-fg: #e6edf3;
+    --cb-muted: #9aa4af;
+    /* ابعاد/فونت */
+    --cb-pad: .875rem;
+    --cb-fz: .9rem;
+    --cb-lh: 1.65;
+    --cb-gutter-w: 2.5rem;
+    --cb-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    /* اجبار LTR فقط در محدوده کامپوننت */
+    direction: ltr;
+    text-align: left;
+    unicode-bidi: isolate;
+    /* کادر */
+    background: var(--cb-bg);
+    color: var(--cb-fg);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 .25rem .6rem rgba(0,0,0,.05);
+    margin: 10px 0;
+}
+
+/* هرچیزی داخل کامپوننت همان جهت/تراز را ارث ببرد (جلوگیری از قوانین RTL سراسری) */
+.codeblock * {
+    direction: inherit;
+    text-align: inherit;
+    unicode-bidi: inherit;
+}
+
+/* هدر بالا (مثل CodePen) */
+.codeblock .cb-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: .55rem .85rem;
+    font-size: .8rem;
+    color: var(--cb-muted);
+    background: var(--bs-primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.codeblock .cb-title {
+    font-weight: 600;
+    opacity: .9;
+}
+
+/* بدنه: گاتر چپ + کد راست (گرید فقط داخل کامپوننت) */
+.codeblock .cb-body {
+    display: grid;
+    grid-template-columns: 1fr var(--cb-gutter-w);
+    align-items: start;
+}
+
+/* گاتر شماره خطوط (با <ol><li>) */
+.codeblock .cb-lines {
+    margin: 0;
+    padding: var(--cb-pad) .5rem;
+    list-style: none;
+    background: var(--cb-bg);
+    font: var(--cb-fz)/var(--cb-lh) var(--cb-font);
+    color: var(--cb-muted);
+    user-select: none;
+    counter-reset: ln 0;
+    text-align: left; /* اعداد سمت چپ گاتر */
+    max-height: 300px;
+}
+
+.codeblock .cb-lines > li {
+    position: relative;
+    height: calc(1em * var(--cb-lh)); /* هم‌ارتفاع با هر خط کد */
+}
+
+.codeblock .cb-lines > li::before {
+    counter-increment: ln;
+    content: counter(ln, decimal-leading-zero);
+    position: absolute;
+    left: .25rem;
+    top: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ستون کد – نسخهٔ کامل، با فیکس قطعی علیه rtlcss */
+:root .codeblock .cb-code,
+html .codeblock .cb-code,
+body .codeblock .cb-code {
+    margin: 0;
+    padding: var(--cb-pad);
+    font: var(--cb-fz)/var(--cb-lh) var(--cb-font);
+    white-space: pre; /* بدون شکست خط */
+    overflow: auto;
+    tab-size: 2;
+    unicode-bidi: isolate;
+    max-height: 300px;
+}
+
+/* اختیاری: شکستن خطوط بلند با کلاس is-wrap روی .codeblock */
+.codeblock.is-wrap .cb-code {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+/*تنظیمات اسکرول*/
+/* برای فایرفاکس */
+.cb-code {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bs-primary) var(--cb-bg, var(--cb-bg));
+    scrollbar-gutter: stable; /* جلوگیری از جابجایی محتوا با ظاهر شدن اسکرول */
+}
+
+/* WebKit (Chrome/Edge/Safari) */
+.cb-code::-webkit-scrollbar {
+    width: 3px; 
+    height: 3px;
+}
+
+.cb-code::-webkit-scrollbar-track {
+    background: var(--cb-bg, var(--bs-body-bg));
+    border-radius: 4px;
+}
+
+.cb-code::-webkit-scrollbar-thumb {
+    background: var(--bs-primary);
+    border-radius: 4px;
+    border: 1px solid transparent; /* فاصله از track برای کنتراست بهتر */
+    background-clip: padding-box;
+}
+
+.cb-code::-webkit-scrollbar-thumb:hover {
+    /* کمی تیره‌تر از پرایمری؛ اگر color-mix پشتیبانی نشد، thumb همان var(--bs-primary) می‌ماند */
+    background: color-mix(in srgb, var(--bs-primary), #000 10%);
+}
+
+.cb-code::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* رنگ توکن‌ها (با JS اضافه می‌شوند) */
+.tok-tag {
+    color: #6ea8fe;
+}
+
+.tok-attr {
+    color: #ff87c5;
+}
+
+.tok-str {
+    color: #7ee787;
+}
+
+.tok-comm {
+    color: #9aa4af;
+}
+
+.tok-num {
+    color: #d2a8ff;
+}
+
+.tok-kw {
+    color: #8be9fd;
+}
+
+.tok-type {
+    color: #ffb86c;
+}
+
+.tok-prop {
+    color: #d2a8ff;
+}
+
+.tok-val {
+    color: #7ee787;
+}
+.tok-fn {
+    color: #ffb86c;
+}
+
+.tok-jq {
+    color: #7ee787;
+}

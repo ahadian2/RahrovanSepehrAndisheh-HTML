@@ -1,0 +1,96 @@
+﻿/* سایز پیش‌فرض = بزرگترین */
+.dark-mode-icon {
+    display: inline-block;
+    font-size: 6px; /* بزرگ‌ترین سایز */
+}
+
+/* سایز متوسط */
+.dark-mode-icon--md {
+    font-size: 3px; /* ~75% سایز بزرگ */
+}
+
+/* سایز کوچک */
+.dark-mode-icon--sm {
+    font-size: 2px; /* ~55% سایز بزرگ */
+}
+
+.toggle-slot {
+    position: relative;
+    height: 10em;
+    width: 20em;
+    border-radius: 10em;
+    background-color: var(--toggle-bg);
+    border: 1px solid var(--toggle-border);
+    transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+    background-color: var(--toggle-bg);
+}
+
+.toggle-button {
+    transform: translate(11.75em, 1.75em);
+    position: absolute;
+    height: 6.5em;
+    width: 6.5em;
+    border-radius: 50%;
+    background-color: var(--toggle-knob);
+    box-shadow: inset 0 0 0 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: var(--toggle-knob);
+    box-shadow: inset 0 0 0 0.75em #fff;
+    transform: translate(1.75em, 1.75em);
+}
+
+.sun-icon, .moon-icon {
+    font-size: 6em;
+    line-height: 1;
+}
+
+.sun-icon {
+    color: #ffbb52;
+}
+
+.moon-icon {
+    color: #fff;
+}
+
+.sun-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(15deg);
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 0;
+    transform: translate(11em, 2em) rotate(0deg);
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(12em, 2em) rotate(-15deg);
+}
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}

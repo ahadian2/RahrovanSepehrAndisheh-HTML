@@ -1,0 +1,115 @@
+﻿@use "../../custom/_variables" as *;
+
+.coming-soon-b {
+    background-size: cover;
+    background-position: right bottom;
+    animation: backgroundpan infinite 30s ease-in-out;
+
+    .coming-soon-item-r {
+        position: relative;
+        color: var(--bs-txt-white-fixed);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(mix($primary, #000000, 50%), 0.9);
+            transform: skewX(-9deg);
+            transform-origin: top right;
+            z-index: -1;
+        }
+
+        @media (max-width: 767.98px) {
+            min-height: 50vh;
+            padding: 20px 0;
+
+            &:before {
+                transform: skewX(0deg);
+            }
+
+            .coming-soon-item-des {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+
+        .coming-soon-item-des {
+            max-width: 450px;
+        }
+    }
+
+    .coming-soon-item-l {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .coming-soon-b-social {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 100%;
+                color: var(--bs-txt-white-fixed);
+                background-color: rgba(mix($primary, #000000, 50%), 0.85);
+                transition: transform 0.3s;
+
+                &:hover {
+                    background-color: rgba(mix($primary, #000000, 50%), 1);
+                    transform: translatey(-3px);
+                }
+
+                i {
+                    font-size: 1rem;
+                    line-height: 0;
+                }
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            justify-content: center;
+            min-height: 50vh;
+            padding: 20px;
+
+            .coming-soon-b-social {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                a {
+                    margin: 0 45px;
+                }
+            }
+        }
+    }
+
+    @keyframes backgroundpan {
+        0% {
+            background-size: 100% 100%;
+        }
+
+        50% {
+            background-size: 200% 200%;
+        }
+
+        100% {
+            background-size: 100% 100%;
+        }
+    }
+}

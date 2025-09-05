@@ -1,0 +1,84 @@
+﻿@use "../../custom/_variables" as *;
+.coming-soon-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .coming-soon-a-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+
+        .coming-soon-a-logo {
+            img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        .coming-soon-a-social {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-right: 15px;
+
+            a {
+                color: var(--bs-txt-white-fixed);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 0;
+                width: 55px;
+                height: 55px;
+                border-radius: 100%;
+                transition: background-color 0.3s;
+                font-size: 18px;
+                background-color: rgba($primary, 0.2);
+
+                &:hover {
+                    background-color: var(--bs-border-brand);
+                }
+
+                i {
+                    opacity: 0.8;
+                    transition: transform 0.3s;
+                }
+
+                &:hover i {
+                    transform: scale(1.3);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .coming-soon-a-title {
+        text-align: center;
+
+        h1 {
+            color: #efefef;
+        }
+
+        span {
+            color: #efefef;
+
+            &:before {
+                border-color: #efefef;
+            }
+
+            &:after {
+                border-color: #efefef;
+            }
+        }
+    }
+
+    .coming-soon-a-developer {
+        padding: 15px;
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        color: #efefef;
+    }
+}

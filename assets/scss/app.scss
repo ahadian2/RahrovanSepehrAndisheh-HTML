@@ -1,0 +1,88 @@
+﻿
+@use "../../node_modules/bootstrap/scss/functions";
+//font face
+@use "custom/_font-face";
+// متغیرهای سفارشی
+@use "custom/_variables" as theme;
+
+
+//نقشهٔ رنگ‌ها
+$theme-colors-extended: (
+  "primary":   theme.$primary,
+  "secondary": theme.$secondary,
+  "success":   theme.$success,
+  "info":      theme.$info,
+  "warning":   theme.$warning,
+  "danger":    theme.$danger,
+  "light":     theme.$light,
+  "dark":      theme.$dark,
+
+  //رنگ‌های سفارشی
+  "brandcolor-a":      theme.$brandcolor-a,
+  "brandcolor-b":      theme.$brandcolor-b,
+  "brandcolor-c":      theme.$brandcolor-c,
+  "border-brand":      theme.$border-brand,
+  "border-strong":     theme.$border-strong,
+  "border-medium":     theme.$border-medium,
+  "border-light":      theme.$border-light,
+  "sec-color-light":   theme.$sec-bg-light,
+  "sec-color-dark":    theme.$sec-bg-dark,
+  "sec-color-darker":  theme.$sec-bg-darker,
+  "txt-base":          theme.$txt-base,
+  "txt-muted":         theme.$txt-muted,
+  "txt-faint":         theme.$txt-faint,
+  "txt-black-fixed":   theme.$txt-black-fixed,
+  "txt-white-fixed":   theme.$txt-white-fixed,
+  "txt-gray-fixed":    theme.$txt-gray-fixed,
+  "overlay":           theme.$overlay
+);
+
+
+//هسته
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary:                                 theme.$primary,
+  $secondary:                               theme.$secondary,
+  $success:                                 theme.$success,
+  $info:                                    theme.$info,
+  $warning:                                 theme.$warning,
+  $danger:                                  theme.$danger,
+  $light:                                   theme.$light,
+  $dark:                                    theme.$dark,
+  $theme-colors:                            $theme-colors-extended,
+  $body-bg:                                 theme.$body-bg,
+  $body-color:                              theme.$body-color,
+  $border-radius:                           theme.$border-radius,
+  $spacer:                                  theme.$spacer,
+  $container-max-widths:                    theme.$container-max-widths,
+  $enable-rounded:                          theme.$enable-rounded,
+  $enable-shadows:                          theme.$enable-shadows,
+  $enable-gradients:                        theme.$enable-gradients
+);
+
+// تم‌ها و دارک مد
+@use "custom/_themes";
+@use "custom/_theme-anim";
+
+// افزودن فونت و تایپوگرافی
+//یکی از آنها را فعال کنید بفیه رو با کامنت کردن غیر فعال کنید
+//@use "custom/typography/_yekanbakh";
+@use "custom/typography/_iransans";
+
+// میکسین‌ها و استایل‌های سفارشی
+/*@use "custom/mixins" as *;*/
+
+//کامپوننت ها
+@use "components/Section/sec";
+@use "components/Background/_gradient";
+@use "components/TextColor/_text-color";
+@use "components/Icon/_dark-mode-icon";
+@use "components/CodeViewer/_code-viewer";
+@use "components/Title/_title";
+@use "components/ComingSoon/_coming-soon-a";
+@use "components/ComingSoon/_coming-soon-b";
+@use "components/ColorPalette/_color-palette";
+@use "components/Buttons/_custom-btn";
+@use "components/NavbarTop/_navbar-top-a";
+@use "components/NavbarSidebar/_navbar-sidebar-a";
+@use "components/Scrollbar/_scrollbar";
+

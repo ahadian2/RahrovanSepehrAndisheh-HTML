@@ -1,0 +1,213 @@
+﻿.sec {
+    width: 100%;
+}
+.sec-bg-img {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.sec-bg-light {
+    background-color: var(--bs-sec-bg-light);
+}
+.sec-bg-dark {
+    background-color: var(--bs-sec-bg-dark);
+}
+.sec-bg-darker {
+    background-color: var(--bs-sec-bg-darker);
+}
+
+/* ==== ارتفاع آماده برای سکشن‌ها ==== */
+.sec-min-100vh {
+    min-height: 100vh;
+}
+.sec-min-95vh {
+    min-height: 95vh;
+}
+.sec-min-90vh {
+    min-height: 90vh;
+}
+.sec-min-85vh {
+    min-height: 85vh;
+}
+.sec-min-80vh {
+    min-height: 80vh;
+}
+.sec-min-75vh {
+    min-height: 75vh;
+}
+
+.sec-min-50vh {
+    min-height: 50vh;
+}
+
+/* ==== پشتیبانی svh برای موبایل‌های جدید ==== */
+@supports (min-height: 100svh) {
+    .sec-min-100vh {
+        min-height: 100svh;
+    }
+
+    .sec-min-75vh {
+        min-height: 75svh;
+    }
+
+    .sec-min-50vh {
+        min-height: 50svh;
+    }
+}
+
+/* ==== پس‌زمینه ثابت فقط در دسکتاپ ==== */
+@media (min-width: 992px) {
+    .sec-bg-img {
+        background-attachment: fixed;
+    }
+}
+$max-section-space: 20; // یعنی sec-pt-1 تا sec-pt-20 ساخته میشه
+
+@for $i from 0 through $max-section-space {
+    .sec-pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+
+    .sec-pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+
+    .sec-py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+    }
+}
+
+// لایه شفاف روی تصاویر
+.sec-scrim-20 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.2 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-30 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.3 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-40 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.4 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-50 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.5 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-60 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.6 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-70 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.7 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-80 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.8 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-scrim-90 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.9 );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+//animation background image
+
+.anim-bg-a {
+    animation: anim-a 30s ease-in-out infinite;
+}
+@keyframes anim-a {
+    0% {
+        background-position: center;
+    }
+
+    50% {
+        background-position: top;
+    }
+
+    100% {
+        background-position: center;
+    }
+}

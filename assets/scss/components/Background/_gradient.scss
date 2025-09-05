@@ -1,0 +1,168 @@
+﻿/* ---------------------------------------------
+   Gradient Background Component (all-in-one)
+   File: assets/scss/components/_gradient-bg.scss
+   - linear / radial / conic / repeating-*
+   - animation: pan / rotate / pulse
+   - fixed background (parallax-like)
+   - reads colors & options from CSS variables via inline style
+   - solid color mode (no gradient)
+   - conic rotate with @property + robust ::before fallback
+------------------------------------------------ */
+
+/* ۱) ثبت متغیر قابل انیمیشن برای زاویه (Houdini) */
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+/* ۲) انیمیشن‌ها */
+@keyframes gradient-pan {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient-rotate {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 1turn;
+    }
+    /* 360deg */
+}
+
+@keyframes gradient-pulse {
+    0%,100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.15);
+    }
+}
+
+/* فول‌بک چرخش با ترنسفورم روی شبه‌عنصر */
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* ۳) پایهٔ متغیرها و حالت رنگ ثابت */
+.gradient-bg,
+.bg-solid {
+    /* پیش‌فرض‌ها: همگی با style قابل override هستند */
+    --angle: 90deg; /* برای linear/conic */
+    --shape: ellipse; /* برای radial: circle | ellipse */
+    --at: at center; /* برای radial/conic: at x y (مثل at 30% 40%) */
+    --size: farthest-corner; /* برای radial */
+    --duration: 6s; /* زمان انیمیشن */
+    --easing: ease; /* نوع easing */
+    /* stops: می‌تواند هر تعداد رنگ باشد (۲ تا N)؛
+     مثال: --stops: #ff7e5f, #feb47b, #ffd200; */
+    --stops: var(--start-color, #113F67), var(--end-color, #F59E0B);
+    /* برای حالت رنگ ثابت */
+    --bg-color: var(--start-color, #113F67);
+}
+
+/* حالت «رنگ ثابت» بدون گرادینت */
+.bg-solid {
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* اختیار: اگر خواستی در solid هم انیمیشن pulse داشته باشی */
+    &[data-animate="pulse"] {
+        animation: gradient-pulse var(--duration) var(--easing) infinite;
+    }
+}
+
+/* ۴) هستهٔ گرادینت‌ها: نوع گرادینت با data-type تعیین می‌شود */
+.gradient-bg {
+    /* تنظیمات عمومی */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* linear */
+    &[data-type="linear"] {
+        background-image: linear-gradient(var(--angle), var(--stops));
+    }
+    /* radial */
+    &[data-type="radial"] {
+        background-image: radial-gradient(var(--shape) var(--size) var(--at), var(--stops));
+    }
+    /* conic */
+    &[data-type="conic"] {
+        background-image: conic-gradient(from var(--angle) var(--at), var(--stops));
+    }
+    /* repeating-linear (برای استرایپ/راه‌راه)
+     نکته: در این حالت بهتر است --stops را با بازه‌ها بدهی
+     مثال: #fff 0 20px, #000 20px 40px */
+    &[data-type="repeating-linear"] {
+        background-image: repeating-linear-gradient(var(--angle), var(--stops));
+    }
+    /* repeating-radial */
+    &[data-type="repeating-radial"] {
+        background-image: repeating-radial-gradient(var(--shape) var(--size) var(--at), var(--stops));
+    }
+    /* پس‌زمینهٔ ثابت هنگام اسکرول */
+    &[data-fixed="true"] {
+        background-attachment: fixed;
+    }
+    /* انیمیشن‌ها */
+    &[data-animate="pan"] {
+        background-size: 200% 200%;
+        animation: gradient-pan var(--duration) var(--easing) infinite;
+    }
+
+    &[data-animate="rotate"] {
+        /* برای conic بهترین نتیجه را دارد؛ برای linear هم کار می‌کند چون از --angle می‌خواند */
+        will-change: transform, filter;
+        animation: gradient-rotate var(--duration) linear infinite;
+    }
+
+    &[data-animate="pulse"] {
+        animation: gradient-pulse var(--duration) var(--easing) infinite;
+    }
+}
+
+/* ۵) فول‌بکِ مطمئن برای چرخش کونیک بدون @property
+   - استفاده فقط وقتی data-animate="rotate-xform"
+   - پس‌زمینه روی ::before می‌چرخد، محتوا ثابت می‌ماند */
+.gradient-bg[data-type="conic"][data-animate="rotate-xform"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg[data-type="conic"][data-animate="rotate-xform"]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: conic-gradient(from var(--angle, 0deg) var(--at, at center), var(--stops));
+    animation: spin var(--duration, 8s) linear infinite;
+    transform-origin: center;
+}
+
+.gradient-bg[data-type="conic"][data-animate="rotate-xform"] > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ۶) اوورلی گرادینت (برای قرار گرفتن روی عکس/ویدئو) */
+.gradient-overlay {
+    --overlay: rgba(17, 63, 103, .5); /* قابل تغییر از طریق style */
+    --angle: 180deg; /* قابل تغییر */
+    background: linear-gradient(var(--angle), var(--overlay), transparent);
+    pointer-events: none; /* کلیک‌ها از زیر عبور کنند */
+}

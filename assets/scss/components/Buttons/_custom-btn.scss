@@ -1,0 +1,200 @@
+﻿@use "../../custom/_variables" as *;
+$Myradius:0.2rem;
+
+/*تنطیمات کلی*/
+.btn-brandcolor-a, .btn-brandcolor-b, .btn-brandcolor-c, .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark {
+    color: var(--bs-txt-white-fixed);
+    border-radius: $Myradius !important;
+    font-size: 14px;
+    line-height: 0;
+    padding: 1.3rem 2rem 1.32rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--bs-txt-white-fixed);
+    }
+}
+.btn-outline-brandcolor-a, .btn-outline-brandcolor-b, .btn-outline-brandcolor-c, .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-danger, .btn-outline-warning, .btn-outline-info, .btn-outline-light, .btn-outline-dark {
+    font-size: 14px;
+    line-height: 0;
+    padding: 1.3rem 2rem 1.32rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--bs-txt-white-fixed) !important;
+    }
+}
+.btn-lg {
+    border-radius: $Myradius !important;
+    font-size: 15px;
+    line-height: 0;
+    padding: 1.5rem 3rem 1.52rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.btn-sm {
+    border-radius: $Myradius !important;
+    font-size: 13px;
+    line-height: 0;
+    padding: 1rem 2rem 1.02rem;
+    margin-bottom: 0.5rem;
+}
+
+/*hover-a*/
+.hover-a {
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-b*/
+.hover-b {
+    transition: border-radius 0.3s !important;
+
+    &:hover {
+        border-radius: 30px !important;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-c*/
+.hover-c {
+    transition: transform 0.3s !important;
+
+    &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-d*/
+.hover-d {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 115%;
+        height: 200px;
+        background: rgba(mix($brandcolor-b, #ffffff, 40%), 0.3);
+        transform: translateY(-45%) skew(25deg) scale(0);
+        left: -5%;
+        transition: 200ms ease-in-out;
+    }
+
+    &:hover:after {
+        transform: translateY(-45%) skew(25deg) scale(1);
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-e*/
+.hover-e {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent !important;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: $brandcolor-a;
+        transition: width 0.3s;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-f*/
+.hover-f {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px !important;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: $brandcolor-c;
+        transition: width 0.6s;
+        border-radius: 30px !important;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        background-color: transparent !important;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*hover-g*/
+.hover-g {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px !important;
+    border:none !important;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: $brandcolor-c;
+        transition: width 0.6s;
+        border-radius: 30px !important;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+}

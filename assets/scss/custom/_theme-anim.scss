@@ -1,0 +1,16 @@
+﻿//این فایل با کلاس سی اس اس تم-فید کمک میکند تا تعویض تم انیمیشن داشته باشد
+:root{
+  --theme-anim-dur: 200ms;
+  --theme-anim-ease: cubic-bezier(.2,0,0,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .theme-fade, .theme-fade * {
+    transition:
+      //color            var(--theme-anim-dur) var(--theme-anim-ease),
+      //background-color var(--theme-anim-dur) var(--theme-anim-ease),
+      //border-color     var(--theme-anim-dur) var(--theme-anim-ease),
+      fill             var(--theme-anim-dur) var(--theme-anim-ease),
+      stroke           var(--theme-anim-dur) var(--theme-anim-ease),
+      box-shadow       var(--theme-anim-dur) var(--theme-anim-ease);
+  }
+}

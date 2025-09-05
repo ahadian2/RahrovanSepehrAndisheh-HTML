@@ -1,0 +1,144 @@
+﻿body {
+    //متعییر ها
+    --bs-font-sans-serif: "Yekan Bakh FaNum",system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --bs-font-size-base: 1rem;
+    --bs-line-height-base: 1.6;
+    //
+    font-family: var(--bs-font-sans-serif);
+    line-height: var(--bs-line-height-base);
+    font-size: var(--bs-font-size-base);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    letter-spacing: -1px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+h1, .h1 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    font-size: clamp(1.875rem, 1.2rem + 2.2vw, 3rem);
+}
+
+h2, .h2 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    font-size: clamp(1.625rem, 1.05rem + 1.8vw, 2.5rem);
+}
+
+h3, .h3 {
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 1.3;
+    font-size: clamp(1.375rem, 1rem + 1.2vw, 2rem);
+}
+
+h4, .h4 {
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 1.35;
+    font-size: 1.25rem;
+}
+
+h5, .h5 {
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    line-height: 1.45;
+    font-size: 1.125rem;
+}
+
+h6, .h6 {
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.lead {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.9;
+    letter-spacing: -0.5px;
+}
+
+small, .small {
+    font-size: .875rem;
+    letter-spacing: -0.25px;
+}
+/* فاصله پاراگراف‌ها */
+p {
+    margin-bottom: .9rem;
+}
+/* لینک‌ها تمیزتر */
+a {
+    text-decoration-thickness: from-font;
+    text-underline-offset: .15em;
+}
+/* المان‌های متنی پرکاربرد یکدست با فونت */
+.btn,
+.form-control,
+.nav-link,
+.dropdown-item,
+.badge,
+.breadcrumb,
+.pagination,
+.list-group-item,
+.table,
+.modal-title,
+.offcanvas-title {
+    letter-spacing: -0.6px;
+}
+/* Placeholder خواناتر */
+::placeholder {
+    letter-spacing: -0.4px;
+    opacity: .7;
+}
+/* کدها با مونو‌اسپیس و بدون کرنینگ منفی */
+code, kbd, pre, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    letter-spacing: 0;
+}
+/* انتخاب متن (highlight) هم‌سو با primary — اگر primary تعریف نشده بود از آبی دیفالت استفاده کن */
+::selection {
+    background: rgba(var(--bs-primary-rgb, 13,110,253), .18);
+}
+/* عرض خوانش پیشنهادی برای متن‌های طولانی */
+.reading {
+    max-width: 68ch;
+}
+/* Utilities مفید */
+.tracking-tighter {
+    letter-spacing: -0.04em !important;
+}
+
+.tracking-tight {
+    letter-spacing: -0.02em !important;
+}
+
+.tracking-normal {
+    letter-spacing: 0 !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.02em !important;
+}
+
+.nums-tabular {
+    font-variant-numeric: tabular-nums;
+}
+
+.nums-proportional {
+    font-variant-numeric: proportional-nums;
+}
+/* جهت‌های کمکی */
+.ltr {
+    direction: ltr;
+    unicode-bidi: plaintext;
+}
+
+.rtl {
+    direction: rtl;
+    unicode-bidi: plaintext;
+}

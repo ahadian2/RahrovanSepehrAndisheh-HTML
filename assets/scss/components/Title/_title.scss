@@ -1,0 +1,403 @@
+﻿@use "../../custom/_variables" as *;
+
+// ==================== پایه تایپوگرافی ====================
+.custom-title {
+    font-family: inherit;
+    font-weight: 900;
+    margin: 0 0 .5rem;
+    line-height: 1.4;
+    color: var(--bs-txt-base);
+    position: relative;
+}
+
+// ==================== سایز ====================
+.custom-title-size-h1 {
+    font-size: clamp(1.875rem, 1.2rem + 2.2vw, 3rem) !important;
+}
+.custom-title-size-h2 {
+    font-size: clamp(1.625rem, 1.05rem + 1.8vw, 2.5rem) !important;
+}
+.custom-title-size-h3 {
+    font-size: clamp(1.375rem, 1rem + 1.2vw, 2rem) !important;
+}
+.custom-title-size-h4 {
+    font-size: 1.25rem !important;
+}
+// ==================== Style One ====================
+/* CodePen: .one */
+.custom-title--one {
+    padding-bottom: .7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0.53rem;
+        right: 50%;
+        width: 28px;
+        height: 6px;
+        margin-right: -14px;
+        background-color: var(--bs-primary);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        margin: 25px auto 0;
+        background-color: var(--bs-primary);
+        opacity: .9;
+    }
+}
+
+// ==================== Style Two ====================
+/* CodePen: .two */
+.custom-title--two {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        bottom: 0;
+        width: 70px;
+        height: 4px;
+        background-color: var(--bs-primary);
+    }
+
+    span {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 3em;
+        color: var(--bs-txt-faint);
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+// ==================== Style Alt-Two ====================
+/* CodePen: .two.alt-two */
+.custom-title--alt-two {
+    @extend .custom-title--two;
+    text-align: center;
+
+    &::before {
+        left: 50%;
+        margin-left: -30px;
+    }
+}
+
+// ==================== Style Three ====================
+/* CodePen: .three */
+.custom-title--three {
+    padding-bottom: 1.2rem;
+    margin-bottom: 1rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        bottom: -1px;
+        height: 8px;
+        width: 55px;
+        background-color: var(--bs-primary);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        bottom: 2px;
+        height: 2px;
+        width: 255px;
+        max-width: 95%;
+        background-color: var(--bs-primary);
+    }
+}
+
+// ==================== Style Four ====================
+/* CodePen: .four */
+.custom-title--four {
+    padding-bottom: 1.56rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+        height: 4px;
+        background-color: var(--bs-primary);
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    span {
+        display: block;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 2em;
+        color: var(--bs-txt-faint);
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    em {
+        font-style: normal;
+        font-weight: 950;
+    }
+}
+
+// ==================== Style Five ====================
+/* CodePen: .five */
+.custom-title--five {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: -1px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--bs-txt-faint);
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        &::before {
+            width: 70px;
+            background-color: var(--bs-primary);
+            height: 4px;
+            content: "";
+        }
+    }
+}
+
+// ==================== Style Six ====================
+/* CodePen: .six */
+.custom-title--six {
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 4px;
+        background-color: var(--bs-primary);
+        right: 50%;
+        margin-right: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 4px;
+        background-color: var(--bs-txt-muted);
+        right: 50%;
+        margin-right: -50px;
+    }
+
+    span {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 3em;
+        color: var(--bs-txt-faint);
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+// ==================== Style Seven ====================
+/* CodePen: .seven */
+.custom-title--seven {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &::before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid var(--bs-primary);
+        border-top: 1px solid var(--bs-primary);
+        height: 5px;
+        width: 80px;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid var(--bs-primary);
+        border-top: 1px solid var(--bs-primary);
+        height: 5px;
+        width: 80px;
+    }
+}
+
+// ==================== Style Eight ====================
+/* CodePen: .eight */
+.custom-title--eight {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &::before {
+        content: " ";
+        display: block;
+        background-color: var(--bs-txt-muted);
+        height: 2px;
+        width: 70px;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        background-color: var(--bs-txt-muted);
+        height: 2px;
+        width: 70px;
+    }
+}
+
+// ==================== Style Nine ====================
+/* CodePen: .nine */
+.custom-title--nine {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    overflow: hidden;
+
+    span {
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 3em;
+        color: var(--bs-txt-faint);
+        padding-top: 5px;
+        letter-spacing: 1px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        &::before {
+            content: " ";
+            display: block;
+            border-bottom: 1px solid var(--bs-txt-faint);
+            border-top: 1px solid var(--bs-txt-faint);
+            height: 5px;
+            width: 70px;
+        }
+
+        &::after {
+            content: " ";
+            display: block;
+            border-bottom: 1px solid var(--bs-txt-faint);
+            border-top: 1px solid var(--bs-txt-faint);
+            height: 5px;
+            width: 70px;
+        }
+    }
+}
+
+// ==================== Style Ten ====================
+/* CodePen: .ten */
+.custom-title--ten {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 5px;
+        background-color: var(--bs-primary);
+    }
+}
+
+// ==================== Style Eleven ====================
+/* CodePen: .eleven */
+.custom-title--eleven {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: -1px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+
+    span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--bs-txt-faint);
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        i {
+            font-size: 30px;
+            color: var(--bs-primary);
+            position: relative;
+            top: 4px;
+        }
+
+        &::after {
+            width: 80px;
+            background-color: var(--bs-txt-faint);
+            height: 2px;
+            content: "";
+        }
+
+        &::before {
+            width: 80px;
+            background-color: var(--bs-txt-faint);
+            height: 2px;
+            content: "";
+        }
+    }
+}
+
+

@@ -1,0 +1,213 @@
+﻿@use "sass:color";
+//تبدیل کننده رنگ hex به rgb
+@mixin set-pair($name, $value) {
+    --bs-#{$name}: #{$value};
+    --bs-#{$name}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
+}
+//تم پیش‌فرض
+:root,
+[data-bs-theme="light"] {
+    //-------------------
+    //متغییر های برند سفارشی
+    //-------------------
+    @include set-pair(brandcolor-a, #104587);
+    @include set-pair(brandcolor-b, #071c37);
+    @include set-pair(brandcolor-c, #1d6fd5);
+    //مقدار primary باید برابر با brandcolor-a باشد
+    @include set-pair(primary, #104587);
+    //-------------------
+    //بکگراند
+    //-------------------
+    @include set-pair(body-bg, #fff);
+    // بکگراند سکشن ها
+    @include set-pair(sec-bg-light, #fff);
+    @include set-pair(sec-bg-dark, #f7f7f7);
+    @include set-pair(sec-bg-darker, #efefef);
+    //-------------------
+    // رنگ نوشته ها
+    //-------------------
+    @include set-pair(body-color, #1a1a1a);
+    // رنگ نوشته سفارشی
+    @include set-pair(txt-base, #1a1a1a);
+    @include set-pair(txt-muted, #555555);
+    @include set-pair(txt-faint, #888888);
+    // رنگ نوشته ثابت سفارشی
+    @include set-pair(txt-black-fixed, #1a1a1a);
+    @include set-pair(txt-white-fixed, #efefef);
+    @include set-pair(txt-gray-fixed, #7f7f7f);
+    //-------------------
+    // رنگ بوردر ها
+    //-------------------
+    @include set-pair(border-strong, #0d6efd);
+    @include set-pair(border-medium, #6c757d);
+    @include set-pair(border-light, #e3e3e3);
+    //مقدار border-brand باید برابر با brandcolor-a باشد
+    @include set-pair(border-brand, #104587);
+    //-------------------
+    // رنگ اصلی
+    //-------------------
+    /* @include set-pair(secondary, #6c757d);
+    @include set-pair(success, #4caf50);
+    @include set-pair(info, #00bcd4);
+    @include set-pair(warning, #ffc107);
+    @include set-pair(danger, #f44336);*/
+    //-------------------
+    //تنطیمات دکمه دارک مد
+    //-------------------
+    --toggle-bg: #ffffff;
+    --toggle-border: #f1f1f1;
+    --toggle-knob: #ffeccf;
+    //-------------------
+    // دارک لایت
+    //-------------------
+    //@include set-pair(light, #1b252d);
+    //@include set-pair(dark, #1E1E1E);
+    //-------------------
+    //صفحه شفاف پشت منوی داشبوردی
+    //-------------------
+    @include set-pair(overlay, rgba(0,0,0,.60));
+}
+
+//تم دارک
+[data-bs-theme="dark"] {
+    //-------------------
+    //متغییر های برند سفارشی
+    //-------------------
+    @include set-pair(brandcolor-a, #104587);
+    @include set-pair(brandcolor-b, #185cb1);
+    @include set-pair(brandcolor-c, #1d6fd5);
+    //مقدار primary باید برابر با brandcolor-a باشد
+    @include set-pair(primary, #104587);
+    //-------------------
+    //بکگراند
+    //-------------------
+    @include set-pair(body-bg, #1b252d);
+    //بکگراند سکشن ها
+    @include set-pair(sec-bg-light, #1b252d);
+    @include set-pair(sec-bg-dark, #192229);
+    @include set-pair(sec-bg-darker, #161f25);
+    //-------------------
+    // رنگ نوشته ها
+    //-------------------
+    @include set-pair(body-color, #fcfcfc);
+    //رنگ نوشته ها سفارشی
+    @include set-pair(txt-base, #fcfcfc);
+    @include set-pair(txt-muted, #ebebeb);
+    @include set-pair(txt-faint, #888888);
+    //رنگ نوشته ثابت سفارشی
+    @include set-pair(txt-black-fixed, #1a1a1a);
+    @include set-pair(txt-white-fixed, #efefef);
+    @include set-pair(txt-gray-fixed, #7f7f7f);
+    //-------------------
+    // رنگ بوردر ها
+    //-------------------
+    @include set-pair(border-strong, #66b2ff);
+    @include set-pair(border-medium, #adb5bd);
+    @include set-pair(border-light, #272727);
+    //مقدار border-brand باید برابر با brandcolor-a باشد
+    @include set-pair(border-brand, #104587);
+    //-------------------
+    // رنگ اصلی
+    //-------------------
+    /*  @include set-pair(secondary, #f86c45);
+    @include set-pair(success, #4caf50);
+    @include set-pair(info, #00bcd4);
+    @include set-pair(warning, #ffc107);
+    @include set-pair(danger, #f44336);
+    @include set-pair(light, #F4BFBF);
+    @include set-pair(dark, #7C93A6);*/
+    //-------------------
+    //تنطیمات دکمه دارک مد
+    //-------------------
+    --toggle-bg: #374151;
+    --toggle-border: #4e4e4e;
+    --toggle-knob: #485367;
+    //-------------------
+    // دارک لایت
+    //-------------------
+    //@include set-pair(light, #1b252d);
+    //@include set-pair(dark, #1E1E1E);
+    //-------------------
+    //صفحه شفاف پشت منوی داشبوردی
+    //-------------------
+    @include set-pair(overlay, rgb(80, 80, 80, 0.6));
+}
+
+
+//همه تم ها
+:root[data-bs-theme],
+[data-bs-theme] {
+    /* input / textarea */
+    .form-control {
+        &:focus {
+            outline: none !important; // حذف outline
+            box-shadow: none !important; // حذف شَدو آبی
+            border-color: var(--bs-border-color); // یا هر رنگ دلخواه
+        }
+    }
+
+    input {
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    .btn {
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+    /*btn*/
+    /* select */
+    .form-select:focus {
+        border-color: var(--bs-primary) !important;
+        box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bs-primary), transparent 75%) !important;
+        outline: 0;
+    }
+    /* checkbox / radio / switch */
+    .form-check-input:checked {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+    }
+
+    .form-check-input:focus {
+        box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bs-primary), transparent 75%) !important;
+        border-color: var(--bs-primary) !important;
+    }
+    /* range */
+    .form-range::-webkit-slider-thumb {
+        background-color: var(--bs-primary) !important;
+    }
+
+    .form-range::-moz-range-thumb {
+        background-color: var(--bs-primary) !important;
+    }
+    /* Dropdown (متغیرهای تمی) */
+    .dropdown-menu {
+        background-color: var(--bs-dropdown-bg) !important;
+        color: var(--bs-dropdown-color) !important;
+        border-color: var(--bs-dropdown-border-color) !important;
+    }
+
+    .dropdown-divider {
+        border-top-color: var(--bs-dropdown-divider-bg) !important;
+    }
+
+    .dropdown-item {
+        color: var(--bs-dropdown-link-color) !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: var(--bs-dropdown-link-hover-color) !important;
+        background-color: var(--bs-dropdown-link-hover-bg) !important;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: var(--bs-dropdown-link-active-color, #fff) !important;
+        background-color: var(--bs-dropdown-link-active-bg, var(--bs-primary)) !important;
+    }
+}

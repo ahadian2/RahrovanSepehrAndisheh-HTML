@@ -1,0 +1,290 @@
+﻿/*//----------------------------------
+//Yekan Bakh
+//----------------------------------
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-Thin.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-Light.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-Regular.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-SemiBold.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-Bold.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-ExtraBold.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 900;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-Black.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Yekan Bakh FaNum;
+    font-style: normal;
+    font-weight: 950;
+    font-stretch: normal;
+    src: url('../fonts/YekanBakh/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff'), url('../fonts/YekanBakh/woff2/YekanBakhFaNum-ExtraBlack.woff2') format('woff2');
+}
+//----------------------------------
+//Iran Sans
+//----------------------------------
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Thin.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-UltraLight.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-UltraLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Light.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Medium.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-DemiBold.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-DemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-ExtraBold.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Black.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 950;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-ExtraBlack.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-ExtraBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 1000;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Heavy.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Heavy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Bold.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IranSans/woff/IRANSansXFaNum-Regular.woff') format('woff'), url('../fonts/IranSans/woff2/IRANSansXFaNum-Regular.woff2') format('woff2');
+}*/
+
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//------------------------CDN Address------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//----------------------------------
+// Yekan Bakh
+//----------------------------------
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 100;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-SemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-Black.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Yekan Bakh FaNum";
+    font-style: normal;
+    font-weight: 950;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff/YekanBakhFaNum-ExtraBlack.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/YekanBakh/woff2/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+}
+
+//----------------------------------
+// IRANSansX
+//----------------------------------
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 100;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Thin.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 200;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-UltraLight.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Medium.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-DemiBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-ExtraBold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Black.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 950;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-ExtraBlack.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-ExtraBlack.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 1000;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Heavy.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IRANSansX";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff/IRANSansXFaNum-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/ahadian2/TehranIT-UI@master/assets/fonts/IranSans/woff2/IRANSansXFaNum-Regular.woff2") format("woff2");
+}
