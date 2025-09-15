@@ -10,19 +10,19 @@
     //-------------------
     //متغییر های برند سفارشی
     //-------------------
-    @include set-pair(brandcolor-a, #104587);
-    @include set-pair(brandcolor-b, #071c37);
-    @include set-pair(brandcolor-c, #1d6fd5);
+    @include set-pair(brandcolor-a, #0f3461);
+    @include set-pair(brandcolor-b, #c23c3a);
+    @include set-pair(brandcolor-c, #2876d6);
     //مقدار primary باید برابر با brandcolor-a باشد
-    @include set-pair(primary, #104587);
+    @include set-pair(primary, #0f3461);
     //-------------------
     //بکگراند
     //-------------------
-    @include set-pair(body-bg, #fff);
+    @include set-pair(body-bg, #eff6ff);
     // بکگراند سکشن ها
-    @include set-pair(sec-bg-light, #fff);
-    @include set-pair(sec-bg-dark, #f7f7f7);
-    @include set-pair(sec-bg-darker, #efefef);
+    @include set-pair(sec-bg-light, #eff6ff);
+    @include set-pair(sec-bg-dark, #e5f0ff);
+    @include set-pair(sec-bg-darker, #d2e5ff);
     //-------------------
     // رنگ نوشته ها
     //-------------------
@@ -73,11 +73,11 @@
     //-------------------
     //متغییر های برند سفارشی
     //-------------------
-    @include set-pair(brandcolor-a, #104587);
-    @include set-pair(brandcolor-b, #185cb1);
-    @include set-pair(brandcolor-c, #1d6fd5);
+    @include set-pair(brandcolor-a, #0f3461);
+    @include set-pair(brandcolor-b, #c23c3a);
+    @include set-pair(brandcolor-c, #2876d6);
     //مقدار primary باید برابر با brandcolor-a باشد
-    @include set-pair(primary, #104587);
+    @include set-pair(primary, #0f3461);
     //-------------------
     //بکگراند
     //-------------------
