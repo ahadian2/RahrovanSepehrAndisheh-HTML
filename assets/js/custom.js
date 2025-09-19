@@ -717,5 +717,49 @@
         once: true,     // فقط یکبار انیمیشن اجرا شود
     });
 
+    //Header Page B Slider
+    // src/js/header-page-b-active-classes.js
+    // ترتیب در HTML: jQuery -> OwlCarousel -> این فایل
+    (function () {
+        const $carousel = $('.header-page-b .owl-carousel');
+
+        function setClasses(e) {
+            if (!e || !e.item) return;
+            const currentIndex = e.item.index; // ایندکس دقیق آیتم جاری (بدون توجه به .active های متعدد)
+
+            const $owlItems = $(e.target).find('.owl-item');      // خود آیتم‌های Owl
+            const $items = $owlItems.find('.item');            // محتوای اسلایدها
+
+            // ابتدا همه را غیرفعال کن
+            $items.removeClass('is-active is-inactive').addClass('is-inactive');
+
+            // فقط آیتم جاری را فعال کن (با ایندکس)
+            const $currentOwlItem = $owlItems.eq(currentIndex);
+            $currentOwlItem.find('.item')
+                .removeClass('is-inactive')
+                .addClass('is-active');
+        }
+
+        // ایونت‌ها را قبل از init ثبت کن تا initialized از دست نرود
+        $carousel
+            .on('initialized.owl.carousel', setClasses)
+            .on('changed.owl.carousel', setClasses)       // هنگام تغییر
+            .on('translated.owl.carousel', setClasses);   // بعد از انیمیشن
+
+        // مقداردهی اسلایدر — مطمئن شو فقط یک آیتم می‌خواهی
+        $carousel.owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: true,
+            autoplay: false,
+            rtl: true,
+            animateOut: 'fadeOut'
+        });
+    })();
+
+
+
+
 });
 

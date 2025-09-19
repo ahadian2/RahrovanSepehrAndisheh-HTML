@@ -1,0 +1,31 @@
+﻿@use "../../custom/_variables" as *;
+
+.header-page-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .header-pages-title {
+        color: var(--bs-txt-white-fixed);
+        text-decoration: none;
+
+        h1 {
+            font-weight: 950;
+            font-size: clamp(1.3rem, .6rem + 1.8vw, 2.5rem) !important;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    p {
+        max-width: 600px;
+        color: var(--bs-txt-white-fixed);
+        text-align: center;
+        padding: 0 15px;
+    }
+}
