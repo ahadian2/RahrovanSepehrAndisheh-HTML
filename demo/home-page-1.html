@@ -165,11 +165,11 @@
     </section>
     <!--sec header-page-b-->
     <section class="header-page-b">
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-theme">
             <!-- Slide 1 -->
             <div class="item">
                 <div class="overlay-owl"></div>
-                <img src="../assets/img/header/5.webp" alt="اسلاید ۱">
+                <img class="owl-lazy" data-src="../assets/img/header/5.webp" alt="اسلاید ۱">
                 <div class="description">
                     <div class="contents">
                         <h2>عنوان اسلاید شماره یک</h2>
@@ -183,7 +183,7 @@
             <!-- Slide 2 -->
             <div class="item">
                 <div class="overlay-owl"></div>
-                <img src="../assets/img/header/4.webp" alt="اسلاید ۱">
+                <img class="owl-lazy" data-src="../assets/img/header/4.webp" alt="اسلاید ۱">
                 <div class="description">
                     <div class="contents">
                         <h2>عنوان اسلاید شماره دو</h2>
@@ -197,7 +197,7 @@
             <!-- Slide 3 -->
             <div class="item">
                 <div class="overlay-owl"></div>
-                <img src="../assets/img/header/3.webp" alt="اسلاید ۱">
+                <img class="owl-lazy" data-src="../assets/img/header/3.webp" alt="اسلاید ۱">
                 <div class="description">
                     <div class="contents">
                         <h2>عنوان اسلاید شماره سه</h2>
@@ -209,11 +209,11 @@
                 </div>
             </div>
         </div>
+
+        <span class="scrolldown"></span>
+
+
     </section>
-
-
-
-
     <!--sidebar-->
     <div class="navbar-sidebar-a__overlay" aria-hidden="true"></div>
     <aside class="navbar-sidebar-a navbar-brand2" aria-hidden="true" tabindex="-1">
@@ -284,17 +284,13 @@
 
         </div>
     </aside>
-
-
-
-
     <!--card-b-->
     <section class="sec sec-bg-dark card-b sec-pt-5 sec-pb-1 style-one">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 mb-5 card-column">
                     <div class="card-details">
-                        <div class="card-icons">
+                        <div class="card-icons" data-aos="fade-up" data-aos-duration="2000">
                             <img class="light-icon" src="../assets/img/other/w1.png" alt="icon" />
                         </div>
                         <h3><a href="#">بازار حق آبه</a></h3>
@@ -306,7 +302,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-5 card-column">
                     <div class="card-details">
-                        <div class="card-icons">
+                        <div class="card-icons" data-aos="fade-up" data-aos-duration="2000">
                             <img class="light-icon" src="../assets/img/other/w2.png" alt="icon" />
                         </div>
                         <h3><a href="#">رهروان سپهر اندیشه</a></h3>
@@ -318,7 +314,7 @@
                 </div>
                 <div class="col-12 col-md-12 col-lg-4 mb-5 card-column">
                     <div class="card-details">
-                        <div class="card-icons">
+                        <div class="card-icons" data-aos="fade-up" data-aos-duration="2000">
                             <img class="light-icon" src="../assets/img/other/w3.png" alt="icon" />
                         </div>
                         <h3><a href="#">مدیریت هوشمند</a></h3>
@@ -331,21 +327,85 @@
             </div>
         </div>
     </section>
+    <!--owl-a-->
+    <section class="sec sec-bg-light sec-py-3 owl-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-custom-1 owl-carousel owl-theme">
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره یک</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره دو</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره سه</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره چهار</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره پنج</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره شش</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image:url(../assets/img/other/tandis-a.webp)">
+                            <div class="item-desc">
+                                <h3>تندیس شماره هفت</h3>
+                                <p>
+                                    تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی
+                                </p>
+                                <a class="btn btn-brandcolor-a btn-sm hover-c my-2 mx-1" href="#">بیشتر بدانید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <section class="sec sec-bg-light sec-py-10">
-        test
+   
     </section>
+
+
+
     <section class="sec sec-bg-dark sec-py-10">
         test
     </section>
@@ -366,7 +426,7 @@
     <section class="footer-a sec-bg-darker">
         <footer class="container">
             <div class="row">
-                <div class="col-2 d-none d-xl-flex footer-a-1">
+                <div class="col-2 d-none d-xl-flex footer-a-1" data-aos="fade-left">
                     <div class="footer-logo">
                         <a href="#">
                             <img src="../assets/img/logo/logo-a.webp" />
@@ -385,7 +445,7 @@
                         <h4>درباره رهروان سپهر اندیشه</h4>
                         <p>در سال 1381جمعی از مهندسان الکترونیک شرکت رهروان سپهر اندیشه، با انجام تحقیقاتی در زمینه‌ی ایده کنتور هوشمند آب، موفق به تست و ثبت اختراع اولین نمونه کنتور هوشمند در سطح کشور و جهان گردیدند. در سال 1382 با گسترش تحقیقات و نتایج حاصله، نمونه بعدی کنتورها به شکل صنعتی‌تری طراحی، تولید و تست آن با موفقیت انجام گردید. از سال 1383 این ایده که بتوان محصولی جدید را مطابق با استانداردهای صنعتی مورد نیاز تامین و تولید نمود، در دستور کار این شرکت قرار گرفت.</p>
                     </div>
-                    <div class="footer-a-2-p2">
+                    <div class="footer-a-2-p2" data-aos="fade-down">
                         <i class="bi bi-geo-alt-fill"></i>
                         <div>
                             <h4>آدرس ما</h4>
@@ -413,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-3 footer-a-3">
+                <div class="col-12 col-lg-4 col-xl-3 footer-a-3" data-aos="flip-left">
                     <div class="footer-a-3-cart">
                         <div class="footer-a-3-cart-p1">
                             <h4>رهروان سپهر اندیشه</h4>
@@ -421,7 +481,6 @@
                         </div>
                         <div class="footer-a-3-cart-p2">
                             <a href="tel:02188102351">021-88102351</a>
-                            <a href="tel:02188102352">021-88102352</a>
                         </div>
                         <div class="footer-a-3-cart-p3 w-100">
                             <div class="footer-a-3-cart-p3-1">

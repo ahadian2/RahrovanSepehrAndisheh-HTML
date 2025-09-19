@@ -711,42 +711,43 @@
             }
         });
     });
-    // ====== AOS animation ======
-    AOS.init({
-        duration: 1200, // مدت زمان انیمیشن (میلی‌ثانیه)
-        once: true,     // فقط یکبار انیمیشن اجرا شود
-    });
-
     //Header Page B Slider
-    // src/js/header-page-b-active-classes.js
-    // ترتیب در HTML: jQuery -> OwlCarousel -> این فایل
     (function () {
         const $carousel = $('.header-page-b .owl-carousel');
 
         function setClasses(e) {
             if (!e || !e.item) return;
-            const currentIndex = e.item.index; // ایندکس دقیق آیتم جاری (بدون توجه به .active های متعدد)
-
-            const $owlItems = $(e.target).find('.owl-item');      // خود آیتم‌های Owl
-            const $items = $owlItems.find('.item');            // محتوای اسلایدها
-
-            // ابتدا همه را غیرفعال کن
+            const currentIndex = e.item.index;
+            const $owlItems = $(e.target).find('.owl-item');
+            const $items = $owlItems.find('.item');
             $items.removeClass('is-active is-inactive').addClass('is-inactive');
-
-            // فقط آیتم جاری را فعال کن (با ایندکس)
-            const $currentOwlItem = $owlItems.eq(currentIndex);
-            $currentOwlItem.find('.item')
+            $owlItems.eq(currentIndex).find('.item')
                 .removeClass('is-inactive')
                 .addClass('is-active');
         }
 
-        // ایونت‌ها را قبل از init ثبت کن تا initialized از دست نرود
+        // رویدادها را قبل از init ثبت کن
         $carousel
-            .on('initialized.owl.carousel', setClasses)
-            .on('changed.owl.carousel', setClasses)       // هنگام تغییر
-            .on('translated.owl.carousel', setClasses);   // بعد از انیمیشن
+            .on('changed.owl.carousel', setClasses)
+            .on('translated.owl.carousel', function (e) {
+                setClasses(e);
+                // بعد از جابه‌جایی اسلاید، مختصات AOS را به‌روزرسانی کن
+                if (window.AOS) requestAnimationFrame(() => AOS.refreshHard());
+            })
+            .one('initialized.owl.carousel', function (e) {
+                setClasses(e);
+                // اینجا AOS را "واقعاً" راه بینداز (یک‌بار)
+                requestAnimationFrame(() => setTimeout(() => {
+                    if (!window.__AOS_READY__) {
+                        initAOS();
+                        window.__AOS_READY__ = true;
+                    } else {
+                        AOS.refreshHard();
+                    }
+                }, 50)); // کمی تأخیر تا lazyLoad جا بیفتد
+            });
 
-        // مقداردهی اسلایدر — مطمئن شو فقط یک آیتم می‌خواهی
+        // مقداردهی اسلایدر
         $carousel.owlCarousel({
             items: 1,
             loop: true,
@@ -754,12 +755,59 @@
             dots: true,
             autoplay: false,
             rtl: true,
+            lazyLoad: true,
             animateOut: 'fadeOut'
         });
+
+        // دکمه اسکرول به پایین
+        $('.scrolldown').on('click', function () {
+            $('html, body').animate({ scrollTop: $(window).scrollTop() + 650 }, 100);
+        });
     })();
+    // ====== AOS animation ======
+    function getHeaderOffset() {
+        const hdr = document.querySelector('.navbar-top-a.is-sticky, .navbar-top-a');
+        return hdr ? (hdr.offsetHeight + 10) : 120;
+    }
+    function initAOS() {
+        AOS.init({
+            duration: 1200,
+            once: true,
+            offset: getHeaderOffset(),
+            anchorPlacement: 'top-bottom'
+        });
+        AOS.refresh();
+    }
+    // Fallback: اگر به هر دلیل initialized نخورد، بعد از load AOS را راه بینداز
+    window.addEventListener('load', function () {
+        if (!window.__AOS_READY__) {
+            initAOS();
+            window.__AOS_READY__ = true;
+        }
+    });
 
 
+    //owl-a
+    (function () {
+        const $carousel = $(".owl-custom-1");
 
+        if (!$carousel.length) return; // اگر وجود نداشت خارج شو
+
+        // مقداردهی OwlCarousel
+        $carousel.owlCarousel({
+            rtl: true,
+            margin: 15,
+            loop: true,
+            autoWidth: true,
+            items: 4
+        });
+
+        // مدیریت کلاس کلیک‌شده
+        $carousel.on("click", ".item", function () {
+            $carousel.find(".item").removeClass("is-clicked");
+            $(this).addClass("is-clicked");
+        });
+    })();
 
 });
 

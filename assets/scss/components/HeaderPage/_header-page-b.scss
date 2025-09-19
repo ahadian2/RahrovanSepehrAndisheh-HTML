@@ -4,14 +4,13 @@
 .header-page-b {
     background-color: var(--bs-brandcolor-a);
 
-
     .owl-carousel {
         width: 100%;
     }
 
     .item {
         min-height: calc(100vh - 140px);
-        background: red;
+        background: var(--bs-sec-bg-darker);
         position: relative;
 
         .overlay-owl {
@@ -34,6 +33,21 @@
             height: 100%;
             width: 100%;
             z-index: 1;
+            animation: image-anim-header 10s infinite;
+        }
+
+        @keyframes image-anim-header {
+            0% {
+                height: 100%
+            }
+
+            50% {
+                height: 115%
+            }
+
+            100% {
+                height: 100%
+            }
         }
 
         .description {
@@ -71,7 +85,7 @@
                         left: 0;
                         width: 0%;
                         height: 2px;
-                        background: var(--bs-gray-500);
+                        background: var(--bs-txt-white-fixed);
                         transition: width 5s;
                     }
                 }
@@ -115,12 +129,6 @@
         }
     }
 
-
-
-
-
-
-
     .owl-dots {
         position: absolute;
         bottom: 0;
@@ -160,117 +168,83 @@
             background: var(--bs-gray-500);
         }
     }
-    /*    .item {
-        h2 {
-            transition: font-size 2s ease;
-        }
-    }
 
-*/
-}
-    /*.header-page-b {
-    position: relative;
-    background: #0e0f12;
+    .scrolldown {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 18.21px;
+        height: 30.94px;
+        border: 3px solid color-mix(in srgb, var(--bs-txt-white-fixed), transparent 40%);
+        border-radius: 50px;
+        z-index: 30;
+        cursor: pointer;
 
-    .owl-carousel {
-        width: 100%;
-    }
-
-    .item {
-        position: relative;
-
-        img {
-            display: block;
-            width: 100%;
-            height: clamp(360px, 100vh, 700px);
-            object-fit: cover;
-            vertical-align: middle;
-        }
-
-        .cap {
+        &:before {
+            content: '';
             position: absolute;
-            inset: 0;
-            display: grid;
-            place-content: center;
-            text-align: center;
-            padding: clamp(16px, 4vw, 48px);
-            color: #fff;
-            z-index: 2;*/
-    /* لایه‌ی تیره برای خوانایی متن (شفاف‌سازی با Sass) */
-    /*&::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                z-index: -1;
-                background: linear-gradient( 180deg, color.mix(#000, transparent, 40%), color.mix(#000, transparent, 65%) );
+            top: 8px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 2px;
+            height: 6.13px;
+            background-color: color-mix(in srgb, var(--bs-txt-white-fixed), transparent 40%);
+            animation: scrollDown 1.5s infinite;
+        }
+
+        @keyframes scrollDown {
+            0% {
+                height: 0px;
             }
 
-            h2 {
-                font-size: clamp(24px, 5vw, 52px);
-                line-height: 1.15;
-                margin: 0 0 .4em;
-                text-shadow: 0 8px 24px rgba(0,0,0,.35);
+            1% {
+                opacity: 0;
+                transform: translate(-50%, 0);
+                height: 0px;
             }
 
-            p {
-                font-size: clamp(14px, 2.2vw, 18px);
-                opacity: .95;
-                margin: 0 0 1rem;
+            30% {
+                opacity: 1;
+                height: 6.13px;
             }
 
-            .btn {
-                border-radius: 999px;
-                padding-inline: 1.25rem;
-                padding-block: .65rem;
-                backdrop-filter: saturate(115%) blur(6px);
+            99% {
+                opacity: 0;
+                transform: translate(-50%, 20px);
+                height: 0px;
+            }
+
+            100% {
+                height: 0px;
             }
         }
-    }*/
-    /* ناوبری و دات‌های Owl (اختیاری زیباتر) */
-    /*}*/
-    /*.header-page-b {
-    .item {
-        h2 {
-            transition: font-size 2s ease;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header-page-b {
+        .item {
+            .description {
+                align-items: center;
+
+                .contents {
+                    text-align: center;
+                }
+            }
+        }
+
+        .owl-dots {
+            top: auto;
+            bottom: 15px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .scrolldown{
+            display:none;
         }
     }
-
-    .item.is-active {  استایل دلخواه برای فعال 
-        h2 {
-            font-size: 90px;
-        }
-    }
-
-    .item.is-inactive {  استایل دلخواه برای غیرفعال 
-        h2 {
-            font-size: 10px;
-        }
-    }
-
-        .owl-nav [class*="owl-"] {
-        width: 44px;
-        height: 44px;
-        border-radius: 999px;
-        background: rgba(255,255,255,.16) !important;
-        color: #fff !important;
-        line-height: 44px;
-        margin: 0 6px;
-        transition: background .2s ease;
-
-        &:hover {
-            background: rgba(255,255,255,.28) !important;
-        }
-    }
-
-    .owl-dots .owl-dot span {
-        width: 8px;
-        height: 8px;
-        background: rgba(255,255,255,.6);
-    }
-
-    .owl-dots .owl-dot.active span {
-        transform: scale(1.25);
-        background: #fff;
-    }
-
-}*/
+}

@@ -20,6 +20,7 @@
     //-------------------
     @include set-pair(body-bg, #eff6ff);
     // بکگراند سکشن ها
+    @include set-pair(sec-bg-lighter, #f4f9ff);
     @include set-pair(sec-bg-light, #eff6ff);
     @include set-pair(sec-bg-dark, #e5f0ff);
     @include set-pair(sec-bg-darker, #d2e5ff);
@@ -83,6 +84,7 @@
     //-------------------
     @include set-pair(body-bg, #1b252d);
     //بکگراند سکشن ها
+    @include set-pair(sec-bg-lighter, #20262b);
     @include set-pair(sec-bg-light, #1b252d);
     @include set-pair(sec-bg-dark, #192229);
     @include set-pair(sec-bg-darker, #161f25);

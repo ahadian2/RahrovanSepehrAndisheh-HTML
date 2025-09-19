@@ -1,0 +1,88 @@
+﻿@use "../../custom/_variables" as *;
+@use "sass:color";
+
+
+
+.owl-a {
+    overflow: hidden;
+
+
+    .owl-stage-outer {
+        max-height: 350px;
+    }
+
+    .item {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 350px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: width 0.5s;
+
+        &:before {
+            content: ' ';
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+
+        .item-desc {
+            color: var(--bs-txt-white-fixed);
+            position: absolute;
+            padding: 0 10px;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+            bottom: -115px;
+            height: 150px;
+            transition: bottom 1s ease-in-out 0.4s;
+
+            h3 {
+                font-size: 1.1rem;
+                font-weight: 900;
+                line-height: 20px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            p {
+                opacity: 0;
+                font-size: 0.9rem;
+                line-height: 2rem;
+                height: 60px;
+                overflow: hidden;
+                margin: 0 2px 5px 2px;
+            }
+
+            a {
+                opacity: 0;
+                margin: 10px 5px 2px 5px !important;
+            }
+        }
+    }
+
+    .is-clicked {
+        width: 400px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+
+        .item-desc {
+            bottom: 0px;
+            width: 400px;
+
+            p {
+                opacity: 1;
+            }
+
+            a {
+                opacity: 1;
+            }
+        }
+    }
+}

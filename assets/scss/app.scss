@@ -25,6 +25,7 @@ $theme-colors-extended: (
   "border-strong":     theme.$border-strong,
   "border-medium":     theme.$border-medium,
   "border-light":      theme.$border-light,
+  "sec-color-lighter": theme.$sec-bg-lighter,
   "sec-color-light":   theme.$sec-bg-light,
   "sec-color-dark":    theme.$sec-bg-dark,
   "sec-color-darker":  theme.$sec-bg-darker,
@@ -91,4 +92,5 @@ $theme-colors-extended: (
 @use "components/Cards/_card-a";
 @use "components/Cards/_card-b";
 @use "components/Cards/_card-c";
+@use "components/Owl/_owl-a";
 
