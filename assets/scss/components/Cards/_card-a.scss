@@ -1,133 +1,53 @@
 ﻿@use "../../custom/_variables" as *;
 
 .card-a {
-    .drop {
-        position: relative;
-        max-width: 100%;
-        width: 330px;
-        height: 330px;
-        /*!rtl:begin:ignore*/
-        box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255,255,255,0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s;
-        margin: auto auto;
+    .card-a-item {
+        a {
+            text-decoration: none;
 
-        &:hover {
-            border-radius: 50% !important;
-        }
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 50px;
-            left: 85px;
-            background: #fffd;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 90px;
-            left: 110px;
-            background: #fffd;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-        }
-
-        .content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 40px;
-            gap: 15px;
-            font-size: 20px;
-
-            p {
-                margin-bottom: .7rem;
-                line-height: 2;
-                font-weight: 800;
-                font-size: 18px;
-                color: var(--bs-txt-muted);
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
             }
+        }
+
+        .card-a-img {
+            overflow: hidden;
+
+            img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                height: 250px;
+                object-position: center;
+                transform: scale(1);
+                transition: transform .5s;
+            }
+        }
+
+        .card-a-desc {
+            padding: 20px 10px 5px 10px;
 
             h2 {
-                position: relative;
-                width: 80px;
-                height: 80px;
-                font-size: 2em;
-                border-radius: 50%;
-                display: flex;
-                background: var(--bs-sec-bg-light);
-                justify-content: center;
-                align-items: center;
-                color: var(--clr);
-                box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),inset -2px -5px 10px rgba(255,255,255,1), 15px 15px 10px rgba(0,0,0,0.05), 15px 10px 15px rgba(0,0,0,0.025);
+                color: var(--bs-txt-base);
+                font-weight: 800;
+                font-size: clamp(1rem, 1rem + 1.2vw, 1rem) !important;
+                line-height: 2rem;
+                overflow: hidden;
+                height: 30px;
             }
 
-            a {
-                position: relative;
-                padding: 10px 25px 9px;
-                text-decoration: none;
-                color: var(--bs-txt-white-fixed);
-                font-weight: 600;
-                background: var(--clr);
-                border-radius: 25px;
-                text-shadow: 0 2px 2px rgba(0, 0, 0, .25);
-                opacity: .9;
-                transition: .5s;
-                font-size: 13px;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
-    .row > .card-a-item:nth-child(1) .drop {
-        border-radius: 33% 67% 58% 42% / 51% 33% 67% 49%;
-    }
-
-    .row > .card-a-item:nth-child(2) .drop {
-        border-radius: 63% 37% 43% 57% / 66% 66% 34% 34%;
-    }
-
-    .row > .card-a-item:nth-child(3) .drop {
-        border-radius: 42% 58% 52% 48% / 72% 30% 70% 28%;
-    }
-}
-
-
-[data-bs-theme="dark"] {
-    .card-a {
-        .drop {
-            border-radius: 5px;
-            box-shadow: none;
-            background-color: var(--bs-sec-bg-dark);
-            border-radius: 0 !important;
-
-            &:after {
-                display: none;
-            }
-
-            &:before {
-                display: none;
-            }
-
-            .content {
-                h2 {
-                    box-shadow: none;
-                }
+            p {
+                color: var(--bs-txt-muted);
+                font-size: .9rem;
+                line-height: 2rem;
+                overflow: hidden;
+                height: 100px;
+                text-align: justify;
             }
         }
     }
 }
+
+

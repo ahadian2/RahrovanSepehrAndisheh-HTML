@@ -711,103 +711,133 @@
             }
         });
     });
-    //Header Page B Slider
-    (function () {
-        const $carousel = $('.header-page-b .owl-carousel');
-
-        function setClasses(e) {
-            if (!e || !e.item) return;
-            const currentIndex = e.item.index;
-            const $owlItems = $(e.target).find('.owl-item');
-            const $items = $owlItems.find('.item');
-            $items.removeClass('is-active is-inactive').addClass('is-inactive');
-            $owlItems.eq(currentIndex).find('.item')
-                .removeClass('is-inactive')
-                .addClass('is-active');
-        }
-
-        // رویدادها را قبل از init ثبت کن
-        $carousel
-            .on('changed.owl.carousel', setClasses)
-            .on('translated.owl.carousel', function (e) {
-                setClasses(e);
-                // بعد از جابه‌جایی اسلاید، مختصات AOS را به‌روزرسانی کن
-                if (window.AOS) requestAnimationFrame(() => AOS.refreshHard());
-            })
-            .one('initialized.owl.carousel', function (e) {
-                setClasses(e);
-                // اینجا AOS را "واقعاً" راه بینداز (یک‌بار)
-                requestAnimationFrame(() => setTimeout(() => {
-                    if (!window.__AOS_READY__) {
-                        initAOS();
-                        window.__AOS_READY__ = true;
-                    } else {
-                        AOS.refreshHard();
-                    }
-                }, 50)); // کمی تأخیر تا lazyLoad جا بیفتد
-            });
-
-        // مقداردهی اسلایدر
-        $carousel.owlCarousel({
-            items: 1,
-            loop: true,
-            nav: false,
-            dots: true,
-            autoplay: false,
+    // ====== owl hero-a ======
+    $(function () {
+        $('.owl-hero-a').owlCarousel({
             rtl: true,
             lazyLoad: true,
-            animateOut: 'fadeOut'
+            animateOut: 'fadeOut',
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: false,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            dots: false,
+            nav: false,
+            onInitialized: startProgressBar,
+            onTranslate: resetProgressBar,
+            onTranslated: startProgressBar
         });
-
+        function startProgressBar() {
+            $(".hero-a-progress").css({
+                width: "100%",
+                transition: "width 5s linear"
+            });
+        }
+        function resetProgressBar() {
+            $(".hero-a-progress").css({
+                width: 0,
+                transition: "width 0s"
+            });
+        }
         // دکمه اسکرول به پایین
         $('.scrolldown').on('click', function () {
             $('html, body').animate({ scrollTop: $(window).scrollTop() + 650 }, 100);
         });
-    })();
-    // ====== AOS animation ======
-    function getHeaderOffset() {
-        const hdr = document.querySelector('.navbar-top-a.is-sticky, .navbar-top-a');
-        return hdr ? (hdr.offsetHeight + 10) : 120;
-    }
-    function initAOS() {
-        AOS.init({
-            duration: 1200,
-            once: true,
-            offset: getHeaderOffset(),
-            anchorPlacement: 'top-bottom'
-        });
-        AOS.refresh();
-    }
-    // Fallback: اگر به هر دلیل initialized نخورد، بعد از load AOS را راه بینداز
-    window.addEventListener('load', function () {
-        if (!window.__AOS_READY__) {
-            initAOS();
-            window.__AOS_READY__ = true;
-        }
     });
+    // ====== owl-b ======
+    $('.owl-b .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 4,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1,
 
+            },
+            541: {
+                items: 2,
+            },
+            650: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            }
+        }
 
-    //owl-a
-    (function () {
-        const $carousel = $(".owl-custom-1");
+    });
+    // ====== card-h owl ======
+    $('.card-h .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 4,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 2,
 
-        if (!$carousel.length) return; // اگر وجود نداشت خارج شو
+            },
+            541: {
+                items: 2,
+            },
+            650: {
+                items: 3,
+            },
+            992: {
+                items: 5,
+            }
+        }
 
-        // مقداردهی OwlCarousel
-        $carousel.owlCarousel({
-            rtl: true,
-            margin: 15,
-            loop: true,
-            autoWidth: true,
-            items: 4
-        });
+    });
+    // ====== card-i owl ======
+    $('.card-i .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 6,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 2,
 
-        // مدیریت کلاس کلیک‌شده
-        $carousel.on("click", ".item", function () {
-            $carousel.find(".item").removeClass("is-clicked");
-            $(this).addClass("is-clicked");
-        });
-    })();
+            },
+            541: {
+                items: 2,
+            },
+            650: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+            1200: {
+                items: 5,
+            }
+        }
+
+    });
 
 });
 

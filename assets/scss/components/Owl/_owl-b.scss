@@ -1,0 +1,41 @@
+﻿@use "../../custom/_variables" as *;
+@use "sass:color";
+
+
+
+.owl-b {
+    overflow: hidden;
+
+    .owl-carousel {
+        .item {
+            .card-owl {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    text-decoration: none;
+                    opacity: 0.6;
+                    transition: opacity 0.3s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    img {
+                        height: 90px;
+                        width:auto;
+                        max-width:100%;
+                    }
+
+                    h4 {
+                        color: var(--bs-txt-white-fixed);
+                        font-size: 0.9rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

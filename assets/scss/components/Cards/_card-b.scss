@@ -1,124 +1,44 @@
 ﻿@use "../../custom/_variables" as *;
 
 .card-b {
-    position: relative;
+    .card-b-item {
+        a {
+            text-decoration: none;
+            display: block;
 
-    .card-column {
-        padding-right: 15px;
-        padding-left: 15px;
-        z-index: 1;
-
-        .card-details {
-            width: 80%;
-            margin: auto;
-            position: relative;
-            transition: .3s ease-in-out;
-
-            &:before {
-                content: "";
-                width: 190px;
-                height: 380px;
-                background: var(--bs-sec-bg-light);
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%) skew(-20deg, 0deg);
-                z-index: -1;
-                transition: .3s ease-in-out;
-            }
-
-            &:hover:before {
-                background: var(--bs-sec-bg-darker);
-            }
-
-            .card-icons {
-                width: 140px;
+            .card-b-icon {
+                background-color: var(--bs-brandcolor-a);
                 height: 150px;
-                position: relative;
-                margin: auto;
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
 
-                img {
-                    position: relative;
-                    width: 70px;
-                    height: 70px;
-                }
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    box-shadow: var(--bs-box-shadow) !important;
-                    width: 100%;
-                    height: 100%;
-                    transform: skew(-20deg, 0deg);
-                    background: var(--bs-sec-bg-light);
-                    transition: .3s ease-in-out;
+                i {
+                    font-size: 2rem;
+                    color: var(--bs-brandcolor-c);
+                    transition: font-size .3s;
+                    line-height: 0;
                 }
             }
 
             h3 {
-                margin-bottom: 15px;
-                margin-top: 50px;
-                font-weight: 800;
-                font-size: 1.4rem;
-                line-height: 1.2;
+                margin: 0;
+                font-size: .8rem;
                 text-align: center;
+                padding: 10px 5px;
+                background-color: var(--bs-brandcolor-c);
+                color: var(--bs-brandcolor-a);
+            }
 
-                a {
-                    color: var(--bs-txt-muted);
-                    text-decoration: none;
+            &:hover {
+                .card-b-icon {
+                    i {
+                        font-size: 3rem;
+                    }
                 }
-            }
-
-            p {
-                font-size: .9rem;
-                line-height: 30px;
-                color: var(--bs-txt-muted);
-                text-align: center;
-                overflow: hidden;
-                height: 65px;
-                margin-bottom: 65px;
-            }
-
-            .read-more-btn {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 100%;
-                margin: auto;
-                background: var(--bs-brandcolor-a);
-                transform: translateX(-10px);
-                opacity: 0;
-                visibility: hidden;
-                box-shadow: var(--bs-box-shadow) !important;
-                transition: .3s ease-in-out;
-                text-decoration: none;
-
-                i {
-                    color: var(--bs-txt-white-fixed);
-                    font-size: 20px;
-                    position: relative;
-                    top: 2px;
-                }
-            }
-
-            &:hover .card-icons {
-                &:before {
-                    background-color: var(--bs-brandcolor-a);
-                }
-            }
-
-            &:hover .read-more-btn {
-                transform: translateX(0);
-                opacity: 1;
-                visibility: visible;
             }
         }
     }
 }
+
+

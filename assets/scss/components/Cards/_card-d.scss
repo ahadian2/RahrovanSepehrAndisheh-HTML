@@ -1,0 +1,21 @@
+﻿@use "../../custom/_variables" as *;
+
+.card-d {
+    background-color: var(--bs-brandcolor-a);
+
+    .card-d-item {
+        gap:15px;
+        p {
+            color: var(--bs-txt-white-fixed);
+            margin-bottom: 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        a {
+            margin-bottom: 0;
+        }
+    }
+}
+
+

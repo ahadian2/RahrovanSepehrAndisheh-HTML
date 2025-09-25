@@ -175,6 +175,16 @@
                 top: -1px;
             }
 
+            .navbar-sidebar-a__language {
+                font-size: 1.1rem;
+                margin-left: 4px;
+                margin-right:11px;
+                position: relative;
+                text-decoration: none;
+                color: var(--bs-txt-muted);
+                top: 1px;
+            }
+
             .navbar-sidebar-a__toggle {
                 font-size: 2rem;
             }

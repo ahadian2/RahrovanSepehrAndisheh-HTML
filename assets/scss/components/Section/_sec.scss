@@ -1,5 +1,6 @@
 ﻿.sec {
     width: 100%;
+    overflow-x:hidden;
 }
 .sec-bg-img {
     position: relative;
@@ -7,6 +8,9 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
+}
+.sec-bg-lighter {
+    background-color: var(--bs-sec-bg-lighter);
 }
 .sec-bg-light {
     background-color: var(--bs-sec-bg-light);
