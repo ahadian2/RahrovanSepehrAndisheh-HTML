@@ -7,99 +7,22 @@
         align-items: center;
         flex-direction: row;
         margin-bottom: 40px !important;
-        margin-top: 20px !important;
+        margin-top: 0px !important;
 
         li {
             button {
-                font-size: 0.8rem !important;
-                transition: background 0.3s;
+                font-size: .85rem !important;
+                font-weight: 300;
+                transition: background .3s;
                 margin: 0 1px !important;
-                color: var(--bs-txt-muted);
-                padding: 5px 10px;
+                padding: 7px 10px 8px 10px;
+                background-color: var(--bs-brandcolor-c);
+                min-width: 100px;
+                color: var(--bs-txt-white-fixed);
 
                 &:hover {
                     background: var(--bs-brandcolor-a);
                     color: var(--bs-txt-white-fixed);
-                }
-            }
-        }
-    }
-
-    .portfolio-card {
-        background: var(--bs-sec-bg-light);
-        transition: background 0.3s;
-
-        a {
-            display: block;
-            position: relative;
-
-            .portfolio-img {
-                text-align: center;
-
-                img {
-                    width: 100%;
-                    max-width: 300px;
-                    object-fit: cover;
-                    display: inline-block;
-                    padding: 25px;
-                }
-            }
-
-            .portfolio-desc {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                color: var(--bs-txt-white-fixed);
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                flex-direction: column;
-                overflow: hidden;
-                transition: opacity .5s;
-                padding: 10px;
-                opacity: 0;
-
-
-                h2 {
-                    font-size: 0.9rem;
-                    margin: 0;
-                    font-weight: 900;
-                    overflow: hidden;
-                    line-height: 2rem;
-                    height: 35px;
-                    margin-bottom: 2px;
-                }
-
-                i {
-                    font-size: 1.3rem;
-                    line-height: 0;
-                    margin-bottom: 5px;
-                    display: none;
-                }
-            }
-        }
-
-        &:hover {
-            background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba($brandcolor-a, 0.45) 100%);
-
-            .portfolio-desc {
-                opacity: 1;
-            }
-        }
-    }
-
-
-
-    @media (max-width: 767.98px) {
-        .portfolio-card {
-            background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba($brandcolor-a, 0.45) 100%);
-
-            a {
-                .portfolio-desc {
-                    opacity: 1;
-                    background: transparent;
                 }
             }
         }

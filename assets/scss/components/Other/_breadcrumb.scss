@@ -1,0 +1,31 @@
+﻿@use "../../custom/_variables" as *;
+
+.breadcrumb-a {
+    overflow: hidden;
+    line-height: 2rem;
+    height: 28px;
+
+    a {
+        color: var(--bs-brandcolor-c);
+        text-decoration: none;
+        transition:color 0.3s;
+
+        &:hover {
+            color: var(--bs-gray-500);
+        }
+    }
+
+    span {
+        font-size: .9rem;
+        font-weight: 800;
+    }
+
+    .slash {
+        color: var(--bs-txt-white-fixed);
+        margin: 0 5px;
+    }
+
+    .breadcrumb_last {
+        color: var(--bs-gray-500);
+    }
+}

@@ -85,6 +85,7 @@ $theme-colors-extended: (
 @use "components/Buttons/_custom-btn";
 @use "components/NavbarTop/_navbar-top-a";
 @use "components/Hero/_hero-a";
+@use "components/Hero/_hero-b";
 @use "components/NavbarSidebar/_navbar-sidebar-a";
 @use "components/Scrollbar/_scrollbar";
 @use "components/Footer/_footer-a";
@@ -97,7 +98,10 @@ $theme-colors-extended: (
 @use "components/Cards/_card-g";
 @use "components/Cards/_card-h";
 @use "components/Cards/_card-i";
+@use "components/Cards/_card-j";
 @use "components/Owl/_owl-a";
 @use "components/Owl/_owl-b";
 @use "components/Portfolio/_portfolio-a";
+@use "components/Other/_breadcrumb";
+@use "components/Other/_pagination";
 

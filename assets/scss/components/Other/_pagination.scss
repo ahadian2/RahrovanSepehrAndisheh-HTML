@@ -1,0 +1,57 @@
+﻿@use "../../custom/_variables" as *;
+
+
+.pagination-a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 35px;
+
+    li {
+        a {
+            background-color: var(--bs-brandcolor-a);
+            color: var(--bs-txt-white-fixed);
+            margin: 15px 5px;
+            text-decoration: none;
+            padding: 5px;
+            line-height: 0;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 2px;
+            transition: background-color 0.3s,transform 0.3s;
+
+            &:hover {
+                background-color: var(--bs-brandcolor-c);
+                transform: scale(1.08);
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+            }
+        }
+    }
+
+    .active {
+        a {
+            background-color: var(--bs-brandcolor-c);
+
+            &:hover {
+                background-color: var(--bs-brandcolor-a);
+            }
+        }
+    }
+
+    .my-pagenavigation-next-back2 {
+        display: none;
+    }
+
+    .my-pagenavigation-next-back1 {
+        display: none;
+    }
+}

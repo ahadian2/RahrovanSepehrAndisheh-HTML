@@ -19,31 +19,32 @@
             }
 
             .card-f-desc {
-                background: linear-gradient(0deg, rgba(15, 52, 97, 0.99) 0%, rgba(255, 255, 255, 0.11) 30%);
+                background: linear-gradient(90deg,rgba($brandcolor-a, 1) 0%, rgba(255, 255, 255, 0) 100%);
                 position: absolute;
-                top: 0;
-                left: 0;
                 right: 0;
+                left: 0;
                 bottom: 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: end;
+                align-items: center;
                 padding: 15px 10px;
                 z-index: 1;
                 color: var(--bs-txt-white-fixed);
+                transition: opacity 0.5s;
+                width: 70%;
+                /*opacity: 0.9;*/
 
                 h3 {
+                    color: var(--bs-txt-white-fixed);
+                    font-size: .85rem;
+                    margin: 0;
                     font-weight: 400;
-                    font-size: 0.9rem;
-                    margin-bottom: 0;
                 }
 
                 i {
                     line-height: 0;
-                    font-size: 1.3rem;
-                    position: relative;
-                    top: 3px;
+                    display: none;
                 }
             }
 
@@ -52,6 +53,10 @@
                     img {
                         transform: scale(1.1);
                     }
+                }
+
+                .card-f-desc {
+                    opacity: 1;
                 }
             }
         }
