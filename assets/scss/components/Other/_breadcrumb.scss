@@ -29,3 +29,33 @@
         color: var(--bs-gray-500);
     }
 }
+.breadcrumb-b {
+    overflow: hidden;
+    line-height: 2rem;
+    height: 28px;
+    margin-bottom: 5px;
+    margin-left:5px;
+
+    a {
+        color: var(--bs-txt-muted);
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--bs-brandcolor-c);
+        }
+    }
+
+    span {
+        font-size: .85rem;
+    }
+
+    .slash {
+        color: var(--bs-txt-muted);
+        margin: 0 3px;
+    }
+
+    .breadcrumb_last {
+        color: var(--bs-txt-muted);
+    }
+}

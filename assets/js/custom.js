@@ -711,6 +711,14 @@
             }
         });
     });
+    // ====== GLightbox ======
+    if (typeof GLightbox !== "undefined") {
+        const lightbox = GLightbox({
+            loop: false,
+            selector: '.glightbox'
+        });
+    }
+
     // ====== owl hero-a ======
     $(function () {
         $('.owl-hero-a').owlCarousel({
@@ -838,6 +846,95 @@
         }
 
     });
+    // ====== widget owl ======
+    $('.widget .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        margin: 0,
+    });
+    // ====== related posts owl ======
+    $('.related-posts .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 3,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1,
 
+            },
+            530: {
+                items: 1,
+            },
+            650: {
+                items: 2,
+            },
+            992: {
+                items: 3,
+            },
+            1200: {
+                items: 3,
+            }
+        }
+
+    });
+    // ====== widget owl ======
+    $('.product-gallery .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        margin: 0,
+    });
+    // ====== related product ======
+    $('.related-product .owl-carousel').owlCarousel({
+        rtl: true,
+        lazyLoad: true,
+        items: 4,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 2,
+
+            },
+            530: {
+                items: 2,
+            },
+            650: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+            1200: {
+                items: 5,
+            }
+        }
+
+    });
 });
 

@@ -25,6 +25,7 @@ $theme-colors-extended: (
   "border-strong":     theme.$border-strong,
   "border-medium":     theme.$border-medium,
   "border-light":      theme.$border-light,
+  "border-lighter":    theme.$border-lighter,
   "sec-color-lighter": theme.$sec-bg-lighter,
   "sec-color-light":   theme.$sec-bg-light,
   "sec-color-dark":    theme.$sec-bg-dark,
@@ -86,6 +87,7 @@ $theme-colors-extended: (
 @use "components/NavbarTop/_navbar-top-a";
 @use "components/Hero/_hero-a";
 @use "components/Hero/_hero-b";
+@use "components/Hero/_hero-c";
 @use "components/NavbarSidebar/_navbar-sidebar-a";
 @use "components/Scrollbar/_scrollbar";
 @use "components/Footer/_footer-a";
@@ -104,4 +106,9 @@ $theme-colors-extended: (
 @use "components/Portfolio/_portfolio-a";
 @use "components/Other/_breadcrumb";
 @use "components/Other/_pagination";
+@use "components/Pages/_single-a";
+@use "components/Pages/_page-a";
+@use "components/Pages/_product-a";
+@use "components/Content/_content-a";
+@use "components/Widget/_widget";
 

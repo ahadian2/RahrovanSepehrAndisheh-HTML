@@ -16,9 +16,24 @@
     <link rel="stylesheet" href="../assets/css/bootstrap-custom.rtl.min.css?v=11.06">
     <link href="../assets/fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="../assets/library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/library/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
     <link href="../assets/css/MyCss.css" rel="stylesheet" />
 </head>
 <body>
+    <!--breadcrumb-->
+    <section class="d-none">
+        <div class="breadcrumb-a">
+            <span>
+                <span>
+                    <span><a href="#/">خانــه</a></span>
+                    <span class="slash">/</span>
+                    <span><a href="#">وبــلاگ</a></span>
+                    <span class="slash">/</span>
+                    <span class="breadcrumb_last" aria-current="page">صفحه 2</span>
+                </span>
+            </span>
+        </div>
+    </section>
     <!--topbar-a-->
     <section class="sec topbar-a">
         <div class="container">
@@ -164,22 +179,195 @@
             </div>
         </div>
     </section>
-    <!--hero-b-->
-    <section class="hero-b sec sec-bg-img sec-scrim-50" style="background-image:url(../assets/img/header/3.webp);">
+    <!--product-->
+    <section class="product-a sec-bg-lighter sec sec-pt-3 sec-pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h1>مــحصولات</h1>
+                <!--gallery-->
+                <div class="col-12 col-lg-5 col-xl-4">
+                    <div class="product-gallery sticky-lg-top">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="../assets/img/product/1.webp" class="glightbox" data-gallery="product-gallery">
+                                    <img class="owl-lazy" data-src="../assets/img/product/1.webp" alt="عکس 1 محصول">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="../assets/img/product/2.webp" class="glightbox" data-gallery="product-gallery">
+                                    <img class="owl-lazy" data-src="../assets/img/product/2.webp" alt="عکس 2 محصول">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="../assets/img/product/3.webp" class="glightbox" data-gallery="product-gallery">
+                                    <img class="owl-lazy" data-src="../assets/img/product/3.webp" alt="عکس 3 محصول">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="../assets/img/product/4.webp" class="glightbox" data-gallery="product-gallery">
+                                    <img class="owl-lazy" data-src="../assets/img/product/4.webp" alt="عکس 4 محصول">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbnails">
+                            <a href="../assets/img/product/1.webp" class="glightbox" data-gallery="product-gallery">
+                                <img src="../assets/img/product/1.webp" alt="عکس 1 محصول">
+                            </a>
+                            <a href="../assets/img/product/2.webp" class="glightbox" data-gallery="product-gallery">
+                                <img src="../assets/img/product/2.webp" alt="عکس 2 محصول">
+                            </a>
+                            <a href="../assets/img/product/3.webp" class="glightbox" data-gallery="product-gallery">
+                                <img src="../assets/img/product/3.webp" alt="عکس 3 محصول">
+                            </a>
+                            <a href="../assets/img/product/4.webp" class="glightbox" data-gallery="product-gallery">
+                                <img src="../assets/img/product/4.webp" alt="عکس 4 محصول">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 d-none d-md-block text-end">
-                    <div class="breadcrumb-a">
-                        <span><span>
-                            <span><a href="#/">خانــه</a></span> 
-                            <span class="slash">/</span> 
-                            <span><a href="#">مــحصولات</a></span> 
-                            <span class="slash">/</span> 
-                            <span class="breadcrumb_last" aria-current="page">صفحه 2</span>
-                         </span></span>
+                <!--post-->
+                <div class="col-12 col-lg-7 col-xl-8 product-post">
+                    <div class="title">
+                        <h1 class="h2">کنتور هوشمند مدل RK120</h1>
+
+                    </div>
+                    <div class="content-a">
+                        <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                        <ul>
+                            <li>منطبق با آخرین مشخصات فراسامانه هوشمند اندازه گیری ملی</li>
+                            <li>امکان صدور فرمان قطع برق در زمان&zwnj;های از پیش تعیین شده جهت مدیریت پیک و دیماند</li>
+                            <li>امکان قطع جریان تا 100A بدون استفاده از تجهیزات اضافه (تنها درکنتور مستقیم بسته به درخواست)</li>
+                            <li>انتقال داده از طریق پورت نوری، مودم داخلی قابل تعویض، پورت RS485 و کارت هوشمند غیر تماسی</li>
+                            <li>امکان قرائت کنتورهای زیر دست</li>
+                            <li>امکان بکارگیری رمزگذاری سخت&zwnj;افزاری مستقل توسط نهادهای امنیتی</li>
+                            <li>قابلیت قرائت در زمان بی&zwnj;برقی از طریق صفحه نمایش و پورت&zwnj;نوری (با استفاده از باتری قابل تعویض و ابرخازن)</li>
+                        </ul>
+                        <h2> اطلاعات فنی کنتور هوشمند مدل RK120</h2>
+                        <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                        <!--table-->
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr><th>مشخصه</th><th>توضیح</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>تبادل داده</td><td>کارت هوشمند / پورت‌های ارتباطی</td></tr>
+                                    <tr><td>حالت اعتباری</td><td>قابل تنظیم با کارت هوشمند</td></tr>
+                                    <tr><td>مصرف مجاز سالانه</td><td>قابل تعریف</td></tr>
+                                    <tr><td>مصرف مجاز سال جاری</td><td>قابل تعریف</td></tr>
+                                    <tr><td>تاریخ شروع اعتبار</td><td>قابل تعریف</td></tr>
+                                    <tr><td>تاریخ پایان اعتبار</td><td>قابل تعریف</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--table-->
+                        <h2>ذخیره‌سازی داده و پروفایل بار</h2>
+                        <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr><th>مشخصه</th><th>توضیح</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>دقت اندازه‌گیری آب</td><td>95%</td></tr>
+                                    <tr><td>نوع کالیبراسیون</td><td>در محل — دستی / نرم‌افزاری</td></tr>
+                                    <tr><td>ایمنی</td><td>تشخیص دستکاری در الکتروپمپ‌ها؛ طراحی ضد دستکاری</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h2>ذخیره‌سازی داده و پروفایل بار</h2>
+                        <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+                        <img src="../assets/img/header/q4.webp" alt="مدیریت منابع آب جهان" />
+
+                        <!--table-->
+                        <h5>ذخیره‌سازی داده و پروفایل بار</h5>
+                        <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--related product-->
+    <section class="related-product sec sec-bg-light sec-pt-5 sec-pb-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-rsa">
+                        <h2>محصولات مرتـبط</h2>
+                        <p>در این بخش میتوانید محصولات مرتـبط را مشاهده کنید.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-j">
+                                <a href="#">
+                                    <div class="card-j-img">
+                                        <img src="../assets/img/product/1.webp">
+                                    </div>
+                                    <div class="card-j-desc">
+                                        <h2>کنتور هوشمند مدل RK120</h2>
+                                        <span>محصول رهروان سپهر اندیشه</span>
+                                        <i class="bi bi-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-j">
+                                <a href="#">
+                                    <div class="card-j-img">
+                                        <img src="../assets/img/product/2.webp">
+                                    </div>
+
+                                    <div class="card-j-desc">
+                                        <h2>کنتور هوشمند مدل RK120</h2>
+                                        <span>محصول رهروان سپهر اندیشه</span>
+                                        <i class="bi bi-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-j">
+                                <a href="#">
+                                    <div class="card-j-img">
+                                        <img src="../assets/img/product/3.webp">
+                                    </div>
+
+                                    <div class="card-j-desc">
+                                        <h2>کنتور هوشمند مدل RK120</h2>
+                                        <span>محصول رهروان سپهر اندیشه</span>
+                                        <i class="bi bi-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-j">
+                                <a href="#">
+                                    <div class="card-j-img">
+                                        <img src="../assets/img/product/4.webp">
+                                    </div>
+
+                                    <div class="card-j-desc">
+                                        <h2>کنتور هوشمند مدل RK120</h2>
+                                        <span>محصول رهروان سپهر اندیشه</span>
+                                        <i class="bi bi-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -255,260 +443,6 @@
 
         </div>
     </aside>
-    
-    <!--card-a-->
-    <section class="sec sec-bg-light sec-pt-5 mt-3">
-        <div class="container">
-            <div class="row">
-
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/1.webp" />
-                            </div>
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/2.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/3.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/4.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/5.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/6.webp" />
-                            </div>
-                            <div class="card-j-desc">
-                                <h2>کنتور هوشمند مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-               
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/7.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کارتخوان مدل RK420</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/8.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کارتخوان مدل RK320</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/10.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>تابلو هوشمند آب و برق</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/9.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>کارتخوان مدل RK120</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/11.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>نرم افزار HHU-PC</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/12.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>نرم افزار HHU 207</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/13.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>نرم افزار HHU 303</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item-->
-                <div class="col-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card-j">
-                        <a href="#">
-                            <div class="card-j-img">
-                                <img src="../assets/img/product/14.webp" />
-                            </div>
-
-                            <div class="card-j-desc">
-                                <h2>نرم افزار MDM</h2>
-                                <span>محصول رهروان سپهر اندیشه</span>
-                                <i class="bi bi-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!--pagination-a-->
-    <div class="sec sec-bg-lighter">
-        <div class="container">
-            <div class="row">
-                <ul class="pagination-a">
-                    <li class="my-pagenavigation-next-back1"><a href="#">« برگه&zwnj;ٔ پیشین</a></li>
-                    <li><a href="#">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li class="my-pagenavigation-next-back2"><a href="#">برگهٔ بعد »</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <!--footer-->
     <section class="footer-a sec-bg-darker">
         <footer class="container">
@@ -603,6 +537,7 @@
     <script src="../assets/library/Jquery-3.7.1/jquery-3.7.1.min.js"></script>
     <script src="../assets/library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../assets/library/glightbox/dist/js/glightbox.min.js"></script>
     <script src="../assets/js/custom.js"></script>
 </body>
 </html>

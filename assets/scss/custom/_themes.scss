@@ -42,6 +42,7 @@
     @include set-pair(border-strong, #0d6efd);
     @include set-pair(border-medium, #6c757d);
     @include set-pair(border-light, #e3e3e3);
+    @include set-pair(border-lighter, #e1eaf5);
     //مقدار border-brand باید برابر با brandcolor-a باشد
     @include set-pair(border-brand, #104587);
     //-------------------
@@ -106,6 +107,7 @@
     @include set-pair(border-strong, #66b2ff);
     @include set-pair(border-medium, #adb5bd);
     @include set-pair(border-light, #272727);
+    @include set-pair(border-lighter, #283036);
     //مقدار border-brand باید برابر با brandcolor-a باشد
     @include set-pair(border-brand, #104587);
     //-------------------

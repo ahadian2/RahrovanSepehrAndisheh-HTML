@@ -1,0 +1,709 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl" class="theme-fade scrollbar-sm" data-bs-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>رهروان سپهر اندیشه</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo/logo-a.webp">
+    <!--Dark Mode-->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-bs-theme', saved);
+        })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/bootstrap-custom.rtl.min.css?v=11.06">
+    <link href="../assets/fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/css/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+    <!--breadcrumb-->
+    <section class="d-none">
+        <div class="breadcrumb-a">
+            <span>
+                <span>
+                    <span><a href="#/">خانــه</a></span>
+                    <span class="slash">/</span>
+                    <span><a href="#">وبــلاگ</a></span>
+                    <span class="slash">/</span>
+                    <span class="breadcrumb_last" aria-current="page">صفحه 2</span>
+                </span>
+            </span>
+        </div>
+    </section>
+    <!--topbar-a-->
+    <section class="sec topbar-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 topbar justify-content-center justify-content-md-between">
+                    <div class="topbar-address d-none d-md-flex">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>خیابان شهید دکتر بهشتی ، پلاک 436 ، ساختمان پارسه ، طبقه ششم ، واحد 24</span>
+                    </div>
+                    <div class="topbar-social">
+                        <a href="#"><i class="bi bi-telephone-fill"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--navbar-top-a-->
+    <section class="sec navbar-top-a" data-sticky-offset="50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="navbar-items">
+                    <div class="navbar-logo">
+                        <a href="#"><img src="../assets/img/logo/logo-a.webp" /></a>
+                        <a href="#" class="d-none d-md-block"><h1>رهروان سپهر اندیشه</h1></a>
+                    </div>
+                    <nav class="navbar-top d-none d-xl-block">
+                        <ul>
+                            <li><a href="#">خــانــه</a></li>
+                            <li class="dropdown-mega">
+                                <a href="#">فروش و خدمات</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">فروش</div>
+                                                <a href="#">راهنمای خرید</a>
+                                                <a href="#">دفاتر فروش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">خدمات پس از فروش</div>
+                                                <a href="#">پیمانکاران</a>
+                                                <a href="#">آموزش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه رهروان</div>
+                                                <a href="#">پیمانکاران</a>
+                                                <a href="#">آموزش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">پروژه ها</a></li>
+                            <li class="dropdown-mega">
+                                <a href="#">درباره ما</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">درباره رهروان سپهر اندیشه</div>
+                                                <a href="#">ما در یک نگاه</a>
+                                                <a href="#">چارت سازمانی</a>
+                                                <a href="#">دستاوردها</a>
+                                                <a href="#">مدیران</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">سامانه سپهر</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/b.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه اندیشه</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-mega">
+                                <a href="#">ســامانه های ما</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">سامانه رهروان</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">سامانه سپهر</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/b.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه اندیشه</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">همکاری با ما</a></li>
+                            <li><a href="#">تماس با ما</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navbar-icon">
+                        <!--menu btn-->
+                        <i class="bi bi-list navbar-sidebar-a__toggle navbar-icon-i d-block d-xl-none" role="button"></i>
+                        <!--language-->
+                        <a href="#" class="navbar-sidebar-a__language navbar-icon-i">EN</a>
+                        <!--search-->
+                        <i class="bi bi-search navbar-sidebar-a__search navbar-icon-i" role="button"></i>
+                        <!--darkmode-->
+                        <i id="darkModeToggle" class="bi bi-brightness-high navbar-sidebar-a__darkMode navbar-icon-i" role="button"></i>
+                        <div class="navbar-icon-search">
+                            <i class="bi bi-x"></i>
+                            <form class="li-search-form" role="search" method="get" action="">
+                                <input type="search" class="li-search-input" name="s" id="s" value="" placeholder="جستجو کنید..." autocomplete="off" required />
+                                <button type="submit" class="li-search-btn" id="searchsubmit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--blog-single-a-->
+    <section class="single-a sec sec-bg-lighter sec-pb-2">
+        <div class="container">
+            <div class="row">
+                <!--title-->
+                <div class="col-12 single-title">
+                    <h2 class="">آغاز نصب کنتورهای هوشمند آب در تهران</h2>
+                </div>
+                <!--post-->
+                <div class="col-12 col-xl-9">
+                    <!--header-->
+                    <div class="single-header">
+                        <img src="../assets/img/post/post-1.webp" />
+                    </div>
+                    <!--description-->
+                    <div class="single-desc">
+                        <div class="category">
+                            <i class="bi bi-tags-fill"></i>
+                            <a href="#">خبر</a>
+                            <a href="#">علمی</a>
+                            <a href="#">آب</a>
+                        </div>
+                        <div class="study">
+                            <i class="bi bi-book-half"></i>
+                            مدت زمان مطالعه :
+                            <span>4</span>
+                            دقیقه
+                        </div>
+                        <div class="Publication">
+                            <i class="bi bi-alarm"></i>
+                            <span> چهارشنبه 8 مرداد 1404</span>
+                        </div>
+                        <div class="author">
+                            <i class="bi bi-person-fill"></i>
+                            نویسنده :
+                            <span>منا ملایی</span>
+                        </div>
+
+                    </div>
+                    <!--body-->
+                    <div class="single-body">
+                        <div class="content-a">
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                            <p class="lead">
+                                این یک پاراگراف مقدمه است تا نحوهٔ نمایش متن، فاصله‌ها و تایپوگرافی بررسی شود.
+                                می‌توان از <strong>تأکید ضخیم</strong> یا <em>تأکید مورب</em> نیز استفاده کرد.
+                                همچنین <a href="#">این یک لینک نمونه</a> است.
+                            </p>
+                            <h2>عنوان نمونهٔ محتوا برای تست قالب</h2>
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+                            <h3>فهرست نکات</h3>
+                            <ul>
+                                <li>نمایش بولت‌ها و فاصله‌ها</li>
+                                <li>رفتار لیست در موبایل و دسکتاپ</li>
+                                <li>تست ارتفاع خط و فاصلهٔ بین خطوط</li>
+                            </ul>
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+                            <blockquote>
+                                از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.
+                            </blockquote>
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+                            <h2>تصویر با کپشن</h2>
+                            <figure>
+                                <img src="../assets/img/header/10.webp" alt="تصویر نمونه برای تست">
+                                <figcaption>کپشن تصویر: توضیح کوتاه دربارهٔ تصویر</figcaption>
+                            </figure>
+
+                            <h2>جدول داده</h2>
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ردیف</th>
+                                            <th>آیتم</th>
+                                            <th>توضیح</th>
+                                            <th>وضعیت</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>۱</td>
+                                            <td>نمونه A</td>
+                                            <td>متن آزمایشی برای بررسی چینش</td>
+                                            <td>فعال</td>
+                                        </tr>
+                                        <tr>
+                                            <td>۲</td>
+                                            <td>نمونه B</td>
+                                            <td>متن آزمایشی طولانی‌تر برای تست شکست خط</td>
+                                            <td>در انتظار</td>
+                                        </tr>
+                                        <tr>
+                                            <td>۲</td>
+                                            <td>نمونه B</td>
+                                            <td>متن آزمایشی طولانی‌تر برای تست شکست خط</td>
+                                            <td>در انتظار</td>
+                                        </tr>
+                                        <tr>
+                                            <td>۲</td>
+                                            <td>نمونه B</td>
+                                            <td>متن آزمایشی طولانی‌تر برای تست شکست خط</td>
+                                            <td>در انتظار</td>
+                                        </tr>
+                                        <tr>
+                                            <td>۲</td>
+                                            <td>نمونه B</td>
+                                            <td>متن آزمایشی طولانی‌تر برای تست شکست خط</td>
+                                            <td>در انتظار</td>
+                                        </tr>
+                                        <tr>
+                                            <td>۲</td>
+                                            <td>نمونه B</td>
+                                            <td>متن آزمایشی طولانی‌تر برای تست شکست خط</td>
+                                            <td>در انتظار</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h2>نکات پایانی</h2>
+                            <p>از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--sidbar-->
+                <div class="col-3 d-none d-xl-block">
+                    <aside class="sidebar-sticky sticky-top">
+                        <!--owl widget-->
+                        <div class="widget widget-owl">
+                            <div class="owl-carousel owl-theme">
+                                <!--item-->
+                                <div class="item">
+                                    <div class="card-j">
+                                        <a href="#">
+                                            <div class="card-j-img">
+                                                <img src="../assets/img/product/1.webp">
+                                            </div>
+                                            <div class="card-j-desc">
+                                                <h2>کنتور هوشمند مدل RK120</h2>
+                                                <span>محصول رهروان سپهر اندیشه</span>
+                                                <i class="bi bi-link"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item">
+                                    <div class="card-j">
+                                        <a href="#">
+                                            <div class="card-j-img">
+                                                <img src="../assets/img/product/2.webp">
+                                            </div>
+
+                                            <div class="card-j-desc">
+                                                <h2>کنتور هوشمند مدل RK120</h2>
+                                                <span>محصول رهروان سپهر اندیشه</span>
+                                                <i class="bi bi-link"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item">
+                                    <div class="card-j">
+                                        <a href="#">
+                                            <div class="card-j-img">
+                                                <img src="../assets/img/product/3.webp">
+                                            </div>
+
+                                            <div class="card-j-desc">
+                                                <h2>کنتور هوشمند مدل RK120</h2>
+                                                <span>محصول رهروان سپهر اندیشه</span>
+                                                <i class="bi bi-link"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--item-->
+                                <div class="item">
+                                    <div class="card-j">
+                                        <a href="#">
+                                            <div class="card-j-img">
+                                                <img src="../assets/img/product/4.webp">
+                                            </div>
+
+                                            <div class="card-j-desc">
+                                                <h2>کنتور هوشمند مدل RK120</h2>
+                                                <span>محصول رهروان سپهر اندیشه</span>
+                                                <i class="bi bi-link"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--wp widget-->
+                        <div class="widget">
+                            <div class="title"><i class="bi bi-list"></i>دستــرسی سریــع</div>
+                            <ul>
+                                <li>
+                                    <a href="#">جدیدترین محصولات</a>
+                                </li>
+                                <li>
+                                    <a href="#">جدیدترین اخبار</a>
+                                </li>
+                                <li>
+                                    <a href="#">جدیدترین مقالات</a>
+                                </li>
+                                <li>
+                                    <a href="#">آشنایی با تیم ما</a>
+                                </li>
+                                <li>
+                                    <a href="#">جدیدترین کنتورها</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2"></div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--related posts-->
+    <section class="related-posts sec sec-bg-light sec-pt-5 sec-pb-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-rsa">
+                        <h2>مطـالب مرتـبط</h2>
+                        <p>در این بخش میتوانید مطـالب مرتـبط را مشاهده کنید.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-4.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            آغاز نصب کنتورهای هوشمند آب در تهران
+                                        </h2>
+                                        <p>
+                                            شرکت آب و فاضلاب استان تهران اعلام کرد مرحله نخست طرح نصب کنتورهای هوشمند در مناطق مرکزی شهر آغاز شده است. این کنتورها قادرند مصرف لحظه‌ای را ثبت کرده و اطلاعات را به‌صورت آنلاین به سامانه مدیریت ارسال کنند. به گفته مسئولان، استفاده از کنتورهای هوشمند می‌تواند تا ۱۵ درصد در مدیریت مصرف و شناسایی نشت‌ها مؤثر باشد.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-6.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            کاهش هدررفت آب با کنتورهای هوشمند
+                                        </h2>
+                                        <p>
+                                            بر اساس گزارشی که امروز منتشر شد، اجرای طرح پایلوت نصب کنتورهای هوشمند در شهر مشهد باعث کاهش ۱۲ درصدی هدررفت آب در یک سال گذشته شده است. این کنتورها علاوه بر ثبت دقیق مصرف، به مشترکان پیام هشدار ارسال می‌کنند و امکان پرداخت قبض بر اساس مصرف واقعی را فراهم می‌سازند.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-5.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            حمایت دولت از تولید داخلی کنتورهای هوشمند
+                                        </h2>
+                                        <p>
+                                            وزارت نیرو از برنامه‌ای برای حمایت از شرکت‌های داخلی در تولید کنتورهای هوشمند آب خبر داد. هدف این برنامه کاهش وابستگی به واردات و توسعه زیرساخت‌های مدیریت هوشمند منابع آبی است. انتظار می‌رود با اجرای این طرح، طی سه سال آینده بیش از دو میلیون کنتور هوشمند در کشور نصب شود.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-1.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            آغاز نصب کنتورهای هوشمند آب در تهران
+                                        </h2>
+                                        <p>
+                                            شرکت آب و فاضلاب استان تهران اعلام کرد مرحله نخست طرح نصب کنتورهای هوشمند در مناطق مرکزی شهر آغاز شده است. این کنتورها قادرند مصرف لحظه‌ای را ثبت کرده و اطلاعات را به‌صورت آنلاین به سامانه مدیریت ارسال کنند. به گفته مسئولان، استفاده از کنتورهای هوشمند می‌تواند تا ۱۵ درصد در مدیریت مصرف و شناسایی نشت‌ها مؤثر باشد.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-2.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            کاهش هدررفت آب با کنتورهای هوشمند
+                                        </h2>
+                                        <p>
+                                            بر اساس گزارشی که امروز منتشر شد، اجرای طرح پایلوت نصب کنتورهای هوشمند در شهر مشهد باعث کاهش ۱۲ درصدی هدررفت آب در یک سال گذشته شده است. این کنتورها علاوه بر ثبت دقیق مصرف، به مشترکان پیام هشدار ارسال می‌کنند و امکان پرداخت قبض بر اساس مصرف واقعی را فراهم می‌سازند.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-a-item">
+                                <a href="#">
+                                    <div class="card-a-img">
+                                        <img src="../assets/img/post/post-3.webp" />
+                                    </div>
+                                    <div class="card-a-desc">
+                                        <h2>
+                                            حمایت دولت از تولید داخلی کنتورهای هوشمند
+                                        </h2>
+                                        <p>
+                                            وزارت نیرو از برنامه‌ای برای حمایت از شرکت‌های داخلی در تولید کنتورهای هوشمند آب خبر داد. هدف این برنامه کاهش وابستگی به واردات و توسعه زیرساخت‌های مدیریت هوشمند منابع آبی است. انتظار می‌رود با اجرای این طرح، طی سه سال آینده بیش از دو میلیون کنتور هوشمند در کشور نصب شود.
+                                        </p>
+                                        <span class="btn btn-brandcolor-a hover-c">بیشتر بدانید</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sidebar-->
+    <div class="navbar-sidebar-a__overlay" aria-hidden="true"></div>
+    <aside class="navbar-sidebar-a navbar-brand2" aria-hidden="true" tabindex="-1">
+        <!--Header-->
+        <div class="navbar-sidebar-a__header">
+            <a href="#">رهروان سپهر اندیشه</a>
+            <i class="bi bi-list navbar-sidebar-a__close" aria-label="بستن"></i>
+        </div>
+        <!--Menu-->
+        <ul class="navbar-sidebar-a__menu scrollbar-sm">
+
+            <!--search form-->
+            <li class="li-search">
+                <form class="li-search-form" role="search" method="get" action="">
+                    <input type="search" class="li-search-input" name="s" id="s" value="" placeholder="جستجو کنید..." autocomplete="off" required />
+                    <button type="submit" class="li-search-btn" id="searchsubmit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </li>
+
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">خانه</a></li>
+            <li class="navbar-sidebar-a__item has-submenu">
+                <a href="#" class="navbar-sidebar-a__link submenu-toggle">محصولات</a>
+                <ul class="navbar-sidebar-a__submenu">
+                    <li class="has-submenu"><a href="#" class="navbar-sidebar-a__link">محصول ۱</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">محصول ۲</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">محصول ۳</a></li>
+                </ul>
+            </li>
+            <li class="navbar-sidebar-a__item has-submenu">
+                <a href="#" class="navbar-sidebar-a__link submenu-toggle">خدمات</a>
+                <ul class="navbar-sidebar-a__submenu">
+                    <li><a class="navbar-sidebar-a__link" href="#">نصب</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">پشتیبانی</a></li>
+                </ul>
+            </li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">ارتباط با ما</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">درباره ما</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">پرسنل فروش</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">پرسنل فنی</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">خبرنامه ها</a></li>
+            <!--dark mode-->
+            <li class="li-darkmode">
+                <span>حالت روز و شب</span>
+                <label class="dark-mode-icon dark-mode-icon--sm" aria-label="Toggle dark mode">
+                    <input class="toggle-checkbox dark-mode-icon-toggle" type="checkbox" id="sidebar-darkmode">
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
+                            <i class="bi bi-sun-fill sun-icon"></i>
+                        </div>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
+                            <i class="bi bi-moon-fill moon-icon"></i>
+                        </div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+        <!--Footer-->
+        <div class="navbar-sidebar-a__footer">
+            <div class="navbar-social">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                <a href="#"><i class="bi bi-telephone-fill"></i></a>
+            </div>
+
+        </div>
+    </aside>
+    <!--footer-->
+    <section class="footer-a sec-bg-darker">
+        <footer class="container">
+            <div class="row">
+                <div class="col-2 d-none d-xl-flex footer-a-1">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="../assets/img/logo/logo-a.webp" />
+                            <h3>رهـــروان</h3>
+                            <h4>سپـــهر اندیـــشه</h4>
+                        </a>
+                    </div>
+                    <div class="enamad">
+                        <a href="#">
+                            <img src="../assets/img/other/enamad.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-7 footer-a-2">
+                    <div class="footer-a-2-p1">
+                        <h4>درباره رهروان سپهر اندیشه</h4>
+                        <p>در سال 1381جمعی از مهندسان الکترونیک شرکت رهروان سپهر اندیشه، با انجام تحقیقاتی در زمینه‌ی ایده کنتور هوشمند آب، موفق به تست و ثبت اختراع اولین نمونه کنتور هوشمند در سطح کشور و جهان گردیدند. در سال 1382 با گسترش تحقیقات و نتایج حاصله، نمونه بعدی کنتورها به شکل صنعتی‌تری طراحی، تولید و تست آن با موفقیت انجام گردید. از سال 1383 این ایده که بتوان محصولی جدید را مطابق با استانداردهای صنعتی مورد نیاز تامین و تولید نمود، در دستور کار این شرکت قرار گرفت.</p>
+                    </div>
+                    <div class="footer-a-2-p2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h4>آدرس ما</h4>
+                            <p>خیابان میرزای شیرازی ، خیابان شهید دکتر بهشتی ، پلاک 436 ، ساختمان پارسه ، طبقه ششم ، واحد 24</p>
+                        </div>
+                    </div>
+                    <div class="footer-a-2-p3 d-none d-lg-flex">
+                        <div class="footer-link">
+                            <div class="footer-link-title">فروش</div>
+                            <a href="#">راهنمای خرید</a>
+                            <a href="#">دفاتر فروش</a>
+                            <a href="#">دانلود</a>
+                        </div>
+                        <div class="footer-link">
+                            <div class="footer-link-title">خدمات پس از فروش</div>
+                            <a href="#">پیمانکاران</a>
+                            <a href="#">آموزش</a>
+                            <a href="#">دانلود</a>
+                        </div>
+                        <div class="footer-link">
+                            <div class="footer-link-title">درباره رهروان سپهر اندیشه</div>
+                            <a href="#">ما در یک نگاه</a>
+                            <a href="#">چارت سازمانی</a>
+                            <a href="#">مدیران</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-3 footer-a-3">
+                    <div class="footer-a-3-cart">
+                        <div class="footer-a-3-cart-p1">
+                            <h4>رهروان سپهر اندیشه</h4>
+                            <p>پاسـخــگوی شماست</p>
+                        </div>
+                        <div class="footer-a-3-cart-p2">
+                            <a href="tel:02188102351">021-88102351</a>
+                            <!--<a href="tel:02188102352">021-88102352</a>-->
+                        </div>
+                        <div class="footer-a-3-cart-p3 w-100">
+                            <div class="footer-a-3-cart-p3-1">
+                                <a href="tel:02188102351" class="btn btn-lg hover-c my-2 mx-1">ارتباط با ما</a>
+                            </div>
+                            <div class="footer-a-3-cart-p3-2">
+                                <a href="#"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section class="footer-bar-a sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-none d-lg-block">
+                    <i class="bi bi-c-circle"></i>
+                    <span>کلیه حقوق مادی و معنوی این سایت متعلق به رهروان سپهر اندیشه می باشد .</span>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <a href="#">برنامه نویسی و طراحی توسط تهران آی تی</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/library/Jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+</body>
+</html>

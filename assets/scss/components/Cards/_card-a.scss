@@ -1,51 +1,52 @@
 ﻿@use "../../custom/_variables" as *;
 
 .card-a {
-    .card-a-item {
-        a {
-            text-decoration: none;
 
-            &:hover {
-                img {
-                    transform: scale(1.1);
-                }
-            }
-        }
+}
+.card-a-item {
+    a {
+        text-decoration: none;
 
-        .card-a-img {
-            overflow: hidden;
-
+        &:hover {
             img {
-                display: block;
-                width: 100%;
-                object-fit: cover;
-                height: 250px;
-                object-position: center;
-                transform: scale(1);
-                transition: transform .5s;
+                transform: scale(1.1);
             }
         }
+    }
 
-        .card-a-desc {
-            padding: 20px 10px 5px 10px;
+    .card-a-img {
+        overflow: hidden;
 
-            h2 {
-                color: var(--bs-txt-muted);
-                font-weight: 800;
-                font-size: clamp(1rem, 1rem + 1.2vw, 1rem) !important;
-                line-height: 2rem;
-                overflow: hidden;
-                height: 30px;
-            }
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            height: 250px;
+            object-position: center;
+            transform: scale(1);
+            transition: transform .5s;
+        }
+    }
 
-            p {
-                color: var(--bs-txt-muted);
-                font-size: .9rem;
-                line-height: 2rem;
-                overflow: hidden;
-                height: 100px;
-                text-align: justify;
-            }
+    .card-a-desc {
+        padding: 20px 10px 5px 10px;
+
+        h2 {
+            color: var(--bs-txt-muted);
+            font-weight: 800;
+            font-size: clamp(1rem, 1rem + 1.2vw, 1rem) !important;
+            line-height: 2rem;
+            overflow: hidden;
+            height: 30px;
+        }
+
+        p {
+            color: var(--bs-txt-muted);
+            font-size: .9rem;
+            line-height: 2rem;
+            overflow: hidden;
+            height: 100px;
+            text-align: justify;
         }
     }
 }

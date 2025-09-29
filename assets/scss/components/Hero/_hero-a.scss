@@ -32,45 +32,7 @@
         .title-desc {
         }
 
-        .desc-loader {
-            position: relative;
-            display: inline-block;
 
-            i {
-                color: var(--bs-txt-white-fixed);
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0.6;
-                transition: opacity 0.3s;
-                cursor:pointer;
-                z-index:1;
-                    &:hover {
-                    opacity: 1;
-                }
-            }
-
-            .loader {
-                opacity: 0.6;
-                width: 50px;
-                aspect-ratio: 1;
-                border-radius: 50%;
-                background: radial-gradient(farthest-side, #838383 94%, rgba(0, 0, 0, 0)) top / 8px 8px no-repeat, conic-gradient(rgba(0, 0, 0, 0) 30%, #dcdcdc);
-                -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 2px), #000 0);
-                animation: l13 1s infinite linear;
-            }
-        }
-
-        @keyframes l13 {
-            100% {
-                transform: rotate(1turn)
-            }
-        }
     }
 
     .owl-hero-a {
@@ -106,5 +68,46 @@
                 z-index: 5;
             }
         }
+    }
+}
+
+.desc-loader {
+    position: relative;
+    display: inline-block;
+
+    i {
+        color: var(--bs-txt-white-fixed);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
+        transition: opacity 0.3s;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .loader {
+        opacity: 0.6;
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: radial-gradient(farthest-side, #838383 94%, rgba(0, 0, 0, 0)) top / 8px 8px no-repeat, conic-gradient(rgba(0, 0, 0, 0) 30%, #dcdcdc);
+        -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 2px), #000 0);
+        animation: l13 1s infinite linear;
+    }
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn)
     }
 }

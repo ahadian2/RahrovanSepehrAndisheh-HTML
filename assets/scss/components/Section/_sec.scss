@@ -24,47 +24,47 @@
 
 /* ==== ارتفاع آماده برای سکشن‌ها ==== */
 .sec-min-100vh {
-    min-height: 100vh;
+    min-height: 100vh !important;
 }
 .sec-min-95vh {
-    min-height: 95vh;
+    min-height: 95vh !important;
 }
 .sec-min-90vh {
-    min-height: 90vh;
+    min-height: 90vh !important;
 }
 .sec-min-85vh {
-    min-height: 85vh;
+    min-height: 85vh !important;
 }
 .sec-min-80vh {
-    min-height: 80vh;
+    min-height: 80vh !important;
 }
 .sec-min-75vh {
-    min-height: 75vh;
+    min-height: 75vh !important;
 }
 
 .sec-min-50vh {
-    min-height: 50vh;
+    min-height: 50vh !important;
 }
 
 /* ==== پشتیبانی svh برای موبایل‌های جدید ==== */
 @supports (min-height: 100svh) {
     .sec-min-100vh {
-        min-height: 100svh;
+        min-height: 100svh !important;
     }
 
     .sec-min-75vh {
-        min-height: 75svh;
+        min-height: 75svh !important;
     }
 
     .sec-min-50vh {
-        min-height: 50svh;
+        min-height: 50svh !important;
     }
 }
 
 /* ==== پس‌زمینه ثابت فقط در دسکتاپ ==== */
 @media (min-width: 992px) {
     .sec-bg-img {
-        background-attachment: fixed;
+        background-attachment: fixed !important;
     }
 }
 $max-section-space: 20; // یعنی sec-pt-1 تا sec-pt-20 ساخته میشه
