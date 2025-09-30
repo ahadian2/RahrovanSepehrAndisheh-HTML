@@ -174,8 +174,9 @@
     ul, ol {
         color: var(--bs-txt-muted);
         font-size: 0.95rem;
-        li{
-            margin-bottom:10px;
+
+        li {
+            margin-bottom: 10px;
         }
     }
 
@@ -184,6 +185,14 @@
             flex-direction: column;
             gap: 15px;
             padding: 30px 20px 40px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        figure {
+            figcaption{
+                display:none;
+            }
         }
     }
 }

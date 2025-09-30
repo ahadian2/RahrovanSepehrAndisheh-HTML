@@ -23,8 +23,7 @@
     }
 
     .single-desc {
-        padding: 10px 5px;
-        margin-bottom: 7px;
+        padding: 10px 5px 0;
         font-size: .75rem;
         font-weight: 600;
         color: var(--bs-txt-gray-fixed);
@@ -60,7 +59,10 @@
         }
     }
 
-
+    .single-body{
+        margin-top:15px;
+    }
+    
     .sidebar-sticky {
         top: 100px;
     }
