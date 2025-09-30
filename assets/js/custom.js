@@ -713,8 +713,18 @@
     });
     // ====== GLightbox ======
     if (typeof GLightbox !== "undefined") {
+        // اول مطمئن شو فوکوس از لینک glightbox برداشته بشه
+        document.addEventListener('click', (e) => {
+            const trigger = e.target.closest('a.glightbox');
+            if (trigger) {
+                trigger.blur(); // جلوگیری از ارور aria-hidden
+            }
+        });
+
+        // اجرای GLightbox
         const lightbox = GLightbox({
             loop: false,
+            touchNavigation: true,
             selector: '.glightbox'
         });
     }
