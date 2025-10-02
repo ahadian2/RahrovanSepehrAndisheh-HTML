@@ -1,0 +1,9 @@
+﻿@use "../../custom/_variables" as *;
+@use "sass:color";
+
+.card-map {
+    iframe{
+        width:100%;
+        display:block;
+    }
+}

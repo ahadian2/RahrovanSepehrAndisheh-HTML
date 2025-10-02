@@ -101,6 +101,7 @@ $theme-colors-extended: (
 @use "components/Cards/_card-h";
 @use "components/Cards/_card-i";
 @use "components/Cards/_card-j";
+@use "components/Cards/_card-map";
 @use "components/Owl/_owl-a";
 @use "components/Owl/_owl-b";
 @use "components/Portfolio/_portfolio-a";
@@ -109,6 +110,7 @@ $theme-colors-extended: (
 @use "components/Pages/_single-a";
 @use "components/Pages/_page-a";
 @use "components/Pages/_product-a";
+@use "components/Pages/_about-us-a";
 @use "components/Content/_content-a";
 @use "components/Widget/_widget";
 

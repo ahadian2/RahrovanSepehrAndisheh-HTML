@@ -1,0 +1,900 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl" class="theme-fade scrollbar-sm" data-bs-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>رهروان سپهر اندیشه</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo/logo-a.webp">
+    <!--Dark Mode-->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-bs-theme', saved);
+        })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/bootstrap-custom.rtl.min.css?v=11.06">
+    <link href="../assets/fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/css/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+    <!--breadcrumb-->
+    <section class="d-none">
+        <div class="breadcrumb-a">
+            <span>
+                <span>
+                    <span><a href="#/">خانــه</a></span>
+                    <span class="slash">/</span>
+                    <span><a href="#">وبــلاگ</a></span>
+                    <span class="slash">/</span>
+                    <span class="breadcrumb_last" aria-current="page">صفحه 2</span>
+                </span>
+            </span>
+        </div>
+    </section>
+    <!--topbar-a-->
+    <section class="sec topbar-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 topbar justify-content-center justify-content-md-between">
+                    <div class="topbar-address d-none d-md-flex">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>خیابان شهید دکتر بهشتی ، پلاک 436 ، ساختمان پارسه ، طبقه ششم ، واحد 24</span>
+                    </div>
+                    <div class="topbar-social">
+                        <a href="#"><i class="bi bi-telephone-fill"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--navbar-top-a-->
+    <section class="sec navbar-top-a" data-sticky-offset="50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="navbar-items">
+                    <div class="navbar-logo">
+                        <a href="#"><img src="../assets/img/logo/logo-a.webp" /></a>
+                        <a href="#" class="d-none d-md-block"><h1>رهروان سپهر اندیشه</h1></a>
+                    </div>
+                    <nav class="navbar-top d-none d-xl-block">
+                        <ul>
+                            <li><a href="#">خــانــه</a></li>
+                            <li class="dropdown-mega">
+                                <a href="#">فروش و خدمات</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">فروش</div>
+                                                <a href="#">راهنمای خرید</a>
+                                                <a href="#">دفاتر فروش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">خدمات پس از فروش</div>
+                                                <a href="#">پیمانکاران</a>
+                                                <a href="#">آموزش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه رهروان</div>
+                                                <a href="#">پیمانکاران</a>
+                                                <a href="#">آموزش</a>
+                                                <a href="#">دانلود</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">پروژه ها</a></li>
+                            <li class="dropdown-mega">
+                                <a href="#">درباره ما</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">درباره رهروان سپهر اندیشه</div>
+                                                <a href="#">ما در یک نگاه</a>
+                                                <a href="#">چارت سازمانی</a>
+                                                <a href="#">دستاوردها</a>
+                                                <a href="#">مدیران</a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">سامانه سپهر</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/b.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه اندیشه</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-mega">
+                                <a href="#">ســامانه های ما</a>
+                                <div class="dropdown-menu mega">
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 mega-content">
+                                                <div class="mega-title">سامانه رهروان</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-center">
+                                                <div class="mega-title">سامانه سپهر</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/b.webp" />
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mega-content align-items-end">
+                                                <div class="mega-title">سامانه اندیشه</div>
+                                                <a href="#" class="cart-mega-a">
+                                                    <img src="../assets/img/mega-menu/a.webp" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">همکاری با ما</a></li>
+                            <li><a href="#">تماس با ما</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navbar-icon">
+                        <!--menu btn-->
+                        <i class="bi bi-list navbar-sidebar-a__toggle navbar-icon-i d-block d-xl-none" role="button"></i>
+                        <!--language-->
+                        <a href="#" class="navbar-sidebar-a__language navbar-icon-i">EN</a>
+                        <!--search-->
+                        <i class="bi bi-search navbar-sidebar-a__search navbar-icon-i" role="button"></i>
+                        <!--darkmode-->
+                        <i id="darkModeToggle" class="bi bi-brightness-high navbar-sidebar-a__darkMode navbar-icon-i" role="button"></i>
+                        <div class="navbar-icon-search">
+                            <i class="bi bi-x"></i>
+                            <form class="li-search-form" role="search" method="get" action="">
+                                <input type="search" class="li-search-input" name="s" id="s" value="" placeholder="جستجو کنید..." autocomplete="off" required />
+                                <button type="submit" class="li-search-btn" id="searchsubmit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--hero-b-->
+    <section class="hero-b sec sec-bg-img sec-scrim-60" style="background-image:url(../assets/img/header/3.webp);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>دربــاره مـــا</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about-us-a-->
+    <section class="about-us-a sec sec-bg-lighter sec-py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-7 d-flex justify-content-center align-items-center">
+                    <div class="content-a">
+                        <p>شرکت دانش بنیان رهروان سپهر اندیشه تولیدکننده کنتور هوشمند آب و برق در ایران فعالیت خود را از سال 1381 همزمان با ثبت اختراع طراحی و توسعه ایده اندازه‏­‌گیری مصرف آب با روشی متفاوت و خلاقانه، آغاز نمود. از سال 1385 با تولید صنعتی محصولی متمایز از کنتورهای موجود رسما وارد بازار کنتور هوشمند آب و برق گردید؛ کنتور هوشمند آب و برق به عنوان تنها دستگاهي که مي‌تواند نياز چندين ساله صنعت آب کشور را جهت اندازه‌گيري و مديريت سفره‌هاي آب زير‌زميني برآورده سازد؛ به سرعت جايگاه خود را در بين مديران و کارشناسان حوزه آب و برق تثبيت نمود. شرکت رهروان سپهر اندیشه، توانسته است با عرضه محصولات و خدمات به 30 استان کشور، بزرگ‌ترین پروژه مدیریت منابع آب جهان را در ایران ایجاد نماید.</p>
+                        <p>این شرکت همزمان با نیازسنجی بازار در سطح کشور و جهان، با تکیه بر پتانسیل بالای مهارت‌های فنی و مهندسی خود، همواره بر ارتقای فنی و کیفی تکیه و تلاش نموده تا محصولی نوآورانه، قابل اطمینان و کارا جهت نظارت و مدیریت منابع آب زیرزمینی ارائه نماید. راهکار این شرکت کارفرمایان را قادر ساخته است تا با استفاده از یک شبکه هوشمند نه تنها در صنعت آب، بلکه در زمینه مدیریت مصرف انرژی نیز سیاست‌‏های کلان را اجرائی نمایند. شرکت رهروان سپهر اندیشه از حدود دو دهه قبل اجرای پروژه­‌های طراحی، ساخت، نصب، راه‌­اندازی و بهره‌برداری کنتور هوشمند آب و برق را آغاز نموده است و در این راه با تکیه بر عوامل تاثیرگذار ذیل توانسته است همواره خود را به عنوان بهترین انتخاب در صنعت آب و برق کشور در مدیریت منابع زیرزمینی آب مطرح نماید:</p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-5 d-flex justify-content-center align-items-center">
+                    <div class="about-us-img">
+                        <img src="../assets/img/header/about-us-1.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-b-->
+    <section class="card-b sec sec-bg-light sec-py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-rsa">
+                        <h2>آنــچــه ما ارائــه می‌دهــیم</h2>
+                        <p>
+                            امکان مديريتي ياد شده تنها هنگامي قابل حصول و اعتماد است که سه قابليت ياد شده در يک مجموعه گردآمده باشند تا امکان هرگونه دستکاري و دخل و تصرف از کاربر سلب گردد و دستگاه اندازه‌گيري بتواند به عنوان يک دستگاه مرجع ايفاي نقش نمايد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-bag-heart-fill"></i>
+                            </div>
+                            <h3>فروش</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-credit-card-fill"></i>
+                            </div>
+                            <h3>مشاوره فروش</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <h3>خدمات پس از فروش</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-cloud-download"></i>
+                            </div>
+                            <h3>دانلود نرم افزار</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+                            <h3>آموزش</h3>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-6 col-md-4 col-xl-2 mb-4">
+                    <div class="card-b-item shadow-sm">
+                        <a href="#">
+                            <div class="card-b-icon">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <h3>پیمانکاران</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-c-->
+    <section class="card-c sec sec-bg-dark sec-pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-8 d-flex justify-content-start align-items-center">
+                    <div class="row">
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4 d-none d-xl-block">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="col-12 col-xl-6 mb-4 d-none d-xl-block">
+                            <div class="card-c-item">
+                                <div class="card-c-icon">
+                                    <i class="bi bi-trophy"></i>
+                                </div>
+                                <div class="card-c-desc">
+                                    <h3>تندیس جایزه بین‌المللی</h3>
+                                    <p>تندیس جایزه بین‌المللی پروژه‌های ابتکاری سال 2014 اتحادیه جهانی آب برای اولین بار توسط یک شرکت ایرانی</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                    <div class="card-c-img">
+                        <img src="../assets/img/other/men.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-d-->
+    <section class="card-d sec sec-py-3">
+        <div class="container">
+            <div class="row">
+                <div class="card-d-item col-12 text-center text-md-start d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between">
+                    <p>رهروان سپهر اندیشه جوایز متعدد داخلی و خارجی کسب کرده است.</p>
+                    <a href="#" class="btn btn-brandcolor-c hover-c">مشاهده همه جوایز</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-h-->
+    <section class="card-h sec sec-bg-light sec-pt-5 sec-pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-rsa">
+                        <h2>تـــیـــم مـــا</h2>
+                        <p>با تیم رهــروان سپهر اندیشه بیشتر آشنــا شوید.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user1.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>امیر فرزاد</h4>
+                                    <span>مدیرعامل</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user2.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>امین معاضدی</h4>
+                                    <span>عضو هیئت مدیره</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user3.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>محسن طراوت</h4>
+                                    <span>نائب رئیس هیئت مدیره</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user4.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>حسینعلی طراوت</h4>
+                                    <span>رئیس هیئت مدیره</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user5.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>ریحانه صوفی</h4>
+                                    <span>معاون برنامه ریزی</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user6.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>کاوه برنجی</h4>
+                                    <span>معاون فنی</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user7.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>مهدی جعفری</h4>
+                                    <span>معاون توسعه</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user8.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>محمد حسن جعفریان</h4>
+                                    <span>مشاور مدیرعامل</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="shadow-sm">
+                                <div class="item-img">
+                                    <img data-src="../assets/img/user/user9.webp" class="owl-lazy" alt="" />
+                                    <div class="social-user">
+                                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="envelope"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <h4>رضا واعظی</h4>
+                                    <span>معاون مالی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-e-->
+    <section class="card-e sec sec-bg-lighter sec-py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-rsa">
+                        <h2>زیـــر مجموعـــه های مـــا</h2>
+                        <p>در این بخش میتوانید زیر مجموعه های شرکت رهروان سپهر اندیشه را مشاهده کنید.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <!--item-->
+                <div class="col-12 col-md-6 col-xl-4 mt-5 mb-4">
+                    <div class="card-e-item shadow-sm">
+                        <a href="#">
+                            <div class="card-e-logo">
+                                <img src="../assets/img/samaneh/1.webp" />
+                            </div>
+                            <div class="card-e-desc">
+                                <h3>شرکت مهرگان</h3>
+                                <p>این شرکت همزمان با نیازسنجی بازار در سطح کشور و جهان، با تکیه بر پتانسیل بالای مهارت‌های فنی و مهندسی خود، همواره بر ارتقای فنی و کیفی تکیه و تلاش نموده تا محصولی نوآورانه، قابل اطمینان و کارا جهت نظارت و مدیریت منابع آب زیرزمینی ارائه نماید. راهکار این شرکت کارفرمایان را قادر ساخته است تا با استفاده از یک شبکه هوشمند نه تنها در صنعت آب، بلکه در زمینه مدیریت مصرف انرژی نیز سیاست‌‏های کلان را اجرائی نمایند.</p>
+                                <i class="bi bi-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-12 col-md-6 col-xl-4 mt-5 mb-4">
+                    <div class="card-e-item shadow-sm">
+                        <a href="#">
+                            <div class="card-e-logo">
+                                <img src="../assets/img/samaneh/2.webp" />
+                            </div>
+                            <div class="card-e-desc">
+                                <h3>شرکت پرآب</h3>
+                                <p>این شرکت همزمان با نیازسنجی بازار در سطح کشور و جهان، با تکیه بر پتانسیل بالای مهارت‌های فنی و مهندسی خود، همواره بر ارتقای فنی و کیفی تکیه و تلاش نموده تا محصولی نوآورانه، قابل اطمینان و کارا جهت نظارت و مدیریت منابع آب زیرزمینی ارائه نماید. راهکار این شرکت کارفرمایان را قادر ساخته است تا با استفاده از یک شبکه هوشمند نه تنها در صنعت آب، بلکه در زمینه مدیریت مصرف انرژی نیز سیاست‌‏های کلان را اجرائی نمایند.</p>
+                                <i class="bi bi-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-12  col-xl-4 mt-5 mb-4">
+                    <div class="card-e-item shadow-sm">
+                        <a href="#">
+                            <div class="card-e-logo">
+                                <img src="../assets/img/samaneh/3.webp" />
+                            </div>
+                            <div class="card-e-desc">
+                                <h3>شرکت سپهر</h3>
+                                <p>این شرکت همزمان با نیازسنجی بازار در سطح کشور و جهان، با تکیه بر پتانسیل بالای مهارت‌های فنی و مهندسی خود، همواره بر ارتقای فنی و کیفی تکیه و تلاش نموده تا محصولی نوآورانه، قابل اطمینان و کارا جهت نظارت و مدیریت منابع آب زیرزمینی ارائه نماید. راهکار این شرکت کارفرمایان را قادر ساخته است تا با استفاده از یک شبکه هوشمند نه تنها در صنعت آب، بلکه در زمینه مدیریت مصرف انرژی نیز سیاست‌‏های کلان را اجرائی نمایند.</p>
+                                <i class="bi bi-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--card-i-->
+    <section class="card-i sec sec-bg-light sec-py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="card-owl">
+                                <a href="#">
+                                    <img data-src="../assets/img/samaneh/9.webp" class="owl-lazy" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--card-map-->
+    <section class="card-map sec">
+        <div id="map-b"></div>
+    </section>
+
+
+
+
+    <!--sidebar-->
+    <div class="navbar-sidebar-a__overlay" aria-hidden="true"></div>
+    <aside class="navbar-sidebar-a navbar-brand2" aria-hidden="true" tabindex="-1">
+        <!--Header-->
+        <div class="navbar-sidebar-a__header">
+            <a href="#">رهروان سپهر اندیشه</a>
+            <i class="bi bi-list navbar-sidebar-a__close" aria-label="بستن"></i>
+        </div>
+        <!--Menu-->
+        <ul class="navbar-sidebar-a__menu scrollbar-sm">
+
+            <!--search form-->
+            <li class="li-search">
+                <form class="li-search-form" role="search" method="get" action="">
+                    <input type="search" class="li-search-input" name="s" id="s" value="" placeholder="جستجو کنید..." autocomplete="off" required />
+                    <button type="submit" class="li-search-btn" id="searchsubmit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </li>
+
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">خانه</a></li>
+            <li class="navbar-sidebar-a__item has-submenu">
+                <a href="#" class="navbar-sidebar-a__link submenu-toggle">محصولات</a>
+                <ul class="navbar-sidebar-a__submenu">
+                    <li class="has-submenu"><a href="#" class="navbar-sidebar-a__link">محصول ۱</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">محصول ۲</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">محصول ۳</a></li>
+                </ul>
+            </li>
+            <li class="navbar-sidebar-a__item has-submenu">
+                <a href="#" class="navbar-sidebar-a__link submenu-toggle">خدمات</a>
+                <ul class="navbar-sidebar-a__submenu">
+                    <li><a class="navbar-sidebar-a__link" href="#">نصب</a></li>
+                    <li><a class="navbar-sidebar-a__link" href="#">پشتیبانی</a></li>
+                </ul>
+            </li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">ارتباط با ما</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">درباره ما</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">پرسنل فروش</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">پرسنل فنی</a></li>
+            <li class="navbar-sidebar-a__item"><a class="navbar-sidebar-a__link" href="#">خبرنامه ها</a></li>
+            <!--dark mode-->
+            <li class="li-darkmode">
+                <span>حالت روز و شب</span>
+                <label class="dark-mode-icon dark-mode-icon--sm" aria-label="Toggle dark mode">
+                    <input class="toggle-checkbox dark-mode-icon-toggle" type="checkbox" id="sidebar-darkmode">
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
+                            <i class="bi bi-sun-fill sun-icon"></i>
+                        </div>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
+                            <i class="bi bi-moon-fill moon-icon"></i>
+                        </div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+        <!--Footer-->
+        <div class="navbar-sidebar-a__footer">
+            <div class="navbar-social">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                <a href="#"><i class="bi bi-telephone-fill"></i></a>
+            </div>
+
+        </div>
+    </aside>
+    <!--footer-->
+    <section class="footer-a sec-bg-darker m-0">
+        <footer class="container">
+            <div class="row">
+                <div class="col-2 d-none d-xl-flex footer-a-1">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="../assets/img/logo/logo-a.webp" />
+                            <h3>رهـــروان</h3>
+                            <h4>سپـــهر اندیـــشه</h4>
+                        </a>
+                    </div>
+                    <div class="enamad">
+                        <a href="#">
+                            <img src="../assets/img/other/enamad.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-7 footer-a-2">
+                    <div class="footer-a-2-p1">
+                        <h4>درباره رهروان سپهر اندیشه</h4>
+                        <p>در سال 1381جمعی از مهندسان الکترونیک شرکت رهروان سپهر اندیشه، با انجام تحقیقاتی در زمینه‌ی ایده کنتور هوشمند آب، موفق به تست و ثبت اختراع اولین نمونه کنتور هوشمند در سطح کشور و جهان گردیدند. در سال 1382 با گسترش تحقیقات و نتایج حاصله، نمونه بعدی کنتورها به شکل صنعتی‌تری طراحی، تولید و تست آن با موفقیت انجام گردید. از سال 1383 این ایده که بتوان محصولی جدید را مطابق با استانداردهای صنعتی مورد نیاز تامین و تولید نمود، در دستور کار این شرکت قرار گرفت.</p>
+                    </div>
+                    <div class="footer-a-2-p2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h4>آدرس ما</h4>
+                            <p>خیابان میرزای شیرازی ، خیابان شهید دکتر بهشتی ، پلاک 436 ، ساختمان پارسه ، طبقه ششم ، واحد 24</p>
+                        </div>
+                    </div>
+                    <div class="footer-a-2-p3 d-none d-lg-flex">
+                        <div class="footer-link">
+                            <div class="footer-link-title">فروش</div>
+                            <a href="#">راهنمای خرید</a>
+                            <a href="#">دفاتر فروش</a>
+                            <a href="#">دانلود</a>
+                        </div>
+                        <div class="footer-link">
+                            <div class="footer-link-title">خدمات پس از فروش</div>
+                            <a href="#">پیمانکاران</a>
+                            <a href="#">آموزش</a>
+                            <a href="#">دانلود</a>
+                        </div>
+                        <div class="footer-link">
+                            <div class="footer-link-title">درباره رهروان سپهر اندیشه</div>
+                            <a href="#">ما در یک نگاه</a>
+                            <a href="#">چارت سازمانی</a>
+                            <a href="#">مدیران</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-3 footer-a-3">
+                    <div class="footer-a-3-cart">
+                        <div class="footer-a-3-cart-p1">
+                            <h4>رهروان سپهر اندیشه</h4>
+                            <p>پاسـخــگوی شماست</p>
+                        </div>
+                        <div class="footer-a-3-cart-p2">
+                            <a href="tel:02188102351">021-88102351</a>
+                            <!--<a href="tel:02188102352">021-88102352</a>-->
+                        </div>
+                        <div class="footer-a-3-cart-p3 w-100">
+                            <div class="footer-a-3-cart-p3-1">
+                                <a href="tel:02188102351" class="btn btn-lg hover-c my-2 mx-1">ارتباط با ما</a>
+                            </div>
+                            <div class="footer-a-3-cart-p3-2">
+                                <a href="#"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section class="footer-bar-a sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-none d-lg-block">
+                    <i class="bi bi-c-circle"></i>
+                    <span>کلیه حقوق مادی و معنوی این سایت متعلق به رهروان سپهر اندیشه می باشد .</span>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <a href="#">برنامه نویسی و طراحی توسط تهران آی تی</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/library/Jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../assets/js/map/map-widget.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+    <!--script map-->
+    <script>
+        jQuery(function ($) {
+            // چندنقطه
+            const MyMapB = [
+                {
+                    province: 'تهران', city: 'تهران', company: 'رهروان سپهر اندیشه',
+                    address: 'تهران – خیابان بهشتی – بعد از چهارراه قائم مقام فراهانی – پلاک 436 – ساختمان پارسه – طبقه 4 – واحد 16',
+                    phone: '02188102351',
+                    lat: 35.72800748406994,
+                    lng: 51.41715650711837
+                },
+            ];
+            createMapIframe({
+                container: '#map-b',
+                data: MyMapB,
+                className: 'map-embed is-large',
+                height: '420px',
+            });
+        });
+    </script>
+
+</body>
+</html>

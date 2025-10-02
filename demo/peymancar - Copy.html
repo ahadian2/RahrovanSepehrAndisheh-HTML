@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl" class="theme-fade scrollbar-sm" data-bs-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>رهروان سپهر اندیشه</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo/logo-a.webp">
+    <!--Dark Mode-->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-bs-theme', saved);
+        })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/bootstrap-custom.rtl.min.css?v=11.06">
+    <link href="../assets/fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/css/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+
+
+    <!--card-map-->
+    <section class="card-map sec">
+        <div id="map-b"></div>
+    </section>
+
+
+
+    <script src="../assets/library/Jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../assets/library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../assets/js/map/map-widget.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+    <!--script map-->
+    <script>
+        jQuery(function ($) {
+            // چندنقطه
+            const MyMapB = [
+                {
+                    province: 'آذربایجان شرقی', city: 'تبریز', company: 'ره روان مهرگان سرزمین',
+                    address: 'تبریز – چایکنار – خیابان دمشقیه – ساختمان مهندسان – طبقه 3 – واحد C',
+                    phone: '0914-6600678, 041-33376792',
+                    lat: 38.07421142270715, 
+                    lng: 46.313855824560704,
+                },
+
+                {
+                    province: 'اردبیل', city: 'اردبیل', company: 'شبکه پردازان نیروی آرتا',
+                    address: 'اردبیل – خیابان انقلاب – روبروی مسجد منصوریه',
+                    phone: '0914-9512953, 045-33257789',
+                    lat: 38.25257761396088, 
+                    lng: 48.28924689047375
+                },
+
+                {
+                    province: 'بوشهر', city: 'برازجان', company: 'خرد نو اندیش',
+                    address: 'بوشهر – برازجان – خیابان شهید چمران – مجتمع تجاری سامان – طبقه 1 – واحد 40',
+                    phone: '077-34229591, 0917-3786058',
+                    lat: 29.266363170111973,
+                    lng: 51.2074308547881
+                },
+
+                {
+                    province: 'خراسان رضوی', city: 'مشهد', company: 'ره روان مهرگان سرزمین',
+                    address: 'مشهد – خیابان سنایی – میدان صاحب الزمان – مجتمع تجاری سبحان – طبقه 2 اداری – واحد 213',
+                    phone: '0915-2942666, 051-37133258-9',
+                    lat: 36.2991169477131, 
+                    lng: 59.59799393133687
+                },
+
+                {
+                    province: 'خراسان شمالی', city: 'اسفراین', company: 'پژواک الکترونیک شرق',
+                    address: 'خراسان شمالی – اسفراین – خیابان طالقانی – جنب اداره مخابرات',
+                    phone: '0912-2276552, 058-37242440',
+                    lat: 37.081745593075354, 
+                    lng: 57.51516820344713
+                },
+
+                {
+                    province: 'خراسان جنوبی', city: 'بیرجند', company: 'نیکاب خاوران',
+                    address: 'بیرجند – خیابان پاسداران – نبش پاسداران 19 – پلاک 53',
+                    phone: '0915-1634176, 056-32423719',
+                    lat: 32.8500657928046, 
+                    lng: 59.22213063140421
+                },
+
+                // سه ردیف زیر آدرس «تهران» دارند (برای نمایندگی‌های استانی شما).
+                {
+                    province: 'تهران', city: 'تهران', company: 'ره روان مهرگان سرزمین',
+                    address: 'تهران – خیابان بهشتی – بعد از چهارراه قائم مقام فراهانی – پلاک 436 – ساختمان پارسه – طبقه 4 – واحد 16',
+                    phone: '0912-8177521, 021-88102351-5',
+                    lat: 35.72800748406994,
+                    lng: 51.41715650711837
+                },
+
+                {
+                    province: 'سمنان', city: 'سمنان', company: 'ره روان مهرگان سرزمین',
+                    address: 'تهران – خیابان بهشتی – بعد از چهارراه قائم مقام فراهانی – پلاک 436 – ساختمان پارسه – طبقه 4 – واحد 16',
+                    phone: '0912-8177521, 021-88102351-5',
+                    lat: 35.58449286813622, 
+                    lng: 53.386542412481674
+                },
+
+                {
+                    province: 'سیستان و بلوچستان', city: 'سیستان و بلوچستان', company: 'ره روان مهرگان سرزمین',
+                    address: 'تهران – خیابان بهشتی – بعد از چهارراه قائم مقام فراهانی – پلاک 436 – ساختمان پارسه – طبقه 4 – واحد 16',
+                    phone: '0912-8177521, 021-88102351-5',
+                    lat: 28.219642875330464, 
+                    lng: 61.21333991782359
+                },
+
+                {
+                    province: 'قزوین', city: 'قزوین', company: 'اطلس نیروی مهر',
+                    address: 'قزوین – خیابان بوعلی غربی – بین چهارراه اناری و نظام وفا – نبش کوچه تفرشی',
+                    phone: '0912-3820240, 028-33333515',
+                    lat: 36.30514338881183,
+                    lng: 50.01453871139611
+                },
+
+                {
+                    province: 'کردستان', city: 'دهگلان', company: 'الکتروفانوس الوند',
+                    address: 'دهگلان – خیابان محمد اوراز – روبروی تامین اجتماعی',
+                    phone: '0918-1117357, 087-5125849',
+                    lat: 35.27611934924158, 
+                    lng: 47.41434582114775
+                },
+
+                {
+                    province: 'کرمان', city: 'کرمان', company: 'شایان برق کارمانیا',
+                    address: 'کرمان – شهرک صنعتی شماره 2 خضرا – بلوار پامچال – خیابان 15',
+                    phone: '0913-1412794, 034-33386347',
+                    lat: 30.261108417386822, 
+                    lng: 57.11252483861102
+                },
+
+                {
+                    province: 'مرکزی', city: 'اراک', company: 'الکتروفانوس الوند',
+                    address: 'اراک – میدان فرمانداری – مجتمع فرمانیه – طبقه 4 – واحد 13',
+                    phone: '0918-1113557, 086-34021396',
+                    lat: 34.07101037342822,
+                    lng: 49.77540803888178
+                },
+
+                {
+                    province: 'همدان', city: 'همدان', company: 'الکتروفانوس الوند',
+                    address: 'همدان – بلوار خواجه رشید – ساختمان پارسیان – طبقه 3 – واحد 14',
+                    phone: '0918-1117357, 081-38273796-7',
+                    lat: 34.77729768751017, 
+                    lng: 48.5078933596495
+                },
+
+                {
+                    province: 'یزد', city: 'یزد', company: 'کاویان صنعت',
+                    address: 'یزد – بلوار مدرس – روبروی تامین اجتماعی',
+                    phone: '0913-2517132, 035-38273412, 035-38263883',
+                    lat: 31.87974409566442,
+                    lng: 54.39251202955373
+                },
+            ];
+            createMapIframe({
+                container: '#map-b',
+                data: MyMapB,
+                className: 'map-embed is-large',
+                features: { filterProvince:true, filterCity:false, searchCompany:false },
+                height: '420px',
+            });
+        });
+    </script>
+
+
+</body>
+</html>

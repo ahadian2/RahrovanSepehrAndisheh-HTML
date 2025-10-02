@@ -1,0 +1,50 @@
+1 - فایل map-widget.js را به پروژه خود اضاف کنید نیاز به اضاف کردن فایل css آن نیست فایل css در خود map-widget.js استفاده شده است.
+<script src="../assets/js/map/map-widget.js"></script>
+
+2- اگر نیاز است فقط یک نقطه روی نقشه اضاف کنید میتوانید از کد زیر استفاده کنید
+    <!--card-map-->
+    <section class="card-map sec">
+        <div id="map-a"></div>
+    </section>
+	
+	<!--script map-->
+    <script>
+        jQuery(function ($) {
+            // تک‌نقطه
+            const MyMapA= [
+                { province: 'خراسان رضوی', city: 'مشهد', company: 'شرکت الف', address: '...', phone: '...', lat: 36.297, lng: 59.605 }
+            ];
+            createMapIframe({
+                container: '#map-a',
+                data:MyMapA,
+                className: 'map-embed is-small',
+                height: '420px',
+                color: '#1565c0'
+            });
+        });
+    </script>
+
+3 - اگر نیاز است  چند نقطه روی نقشه اضاف کنید میتوانید از کد زیر استفاده کنید
+
+		<!--card-map-->
+		<section class="card-map sec">
+			<div id="map-b"></div>
+		</section>
+	
+        <!--script map-->
+	    <script>
+        jQuery(function ($) {
+            // چندنقطه
+            const MyMapB = [
+                { province: 'خراسان رضوی', city: 'مشهد', company: 'شرکت الف', address: '...', phone: '...', lat: 36.297, lng: 59.605 },
+                { province: 'آذربایجان شرقی', city: 'تبریز', company: 'شرکت ب', address: '...', phone: '...', lat: 38.066, lng: 46.298 }
+            ];
+            createMapIframe({
+                container: '#map-b',
+                data:MyMapB,
+                className: 'map-embed is-large',
+                height: '420px',
+            });
+        });
+    </script>
+	
