@@ -92,7 +92,7 @@ ${cssHref ? `<link rel="stylesheet" href="${escapeHtml(cssHref)}">` : ''}
   <div id="toolbar" style="${mode === 'multi' ? '' : 'display:none'}">
     <span id="ctl-province" style="display:${features.filterProvince ? 'inline-flex' : 'none'}; gap:6px; align-items:center;">
       <label for="filter-province" style="display:none">استان:</label>
-      <select id="filter-province"><option value="">انتخاب استان</option></select>
+      <select id="filter-province"><option value="">فیلتر بر اساس استان</option></select>
     </span>
     <span id="ctl-city" style="display:${features.filterCity ? 'inline-flex' : 'none'}; gap:6px; align-items:center;">
       <label for="filter-city">شهر:</label>

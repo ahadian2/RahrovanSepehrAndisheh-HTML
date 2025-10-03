@@ -38,23 +38,50 @@ html, body, #app, #map {
     position:relative;
 }
 
-/* ===== Toolbar ===== */
-#toolbar {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 500;
+/* ===== select ===== */
+#toolbar select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 200px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #0f3461;
+    color: #fff;
+    text-align: center;
+    font-family: 'IRANSansX';
+    padding: 15px 5px;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 0.85rem;
 }
+
+    /* فوکوس */
+    #toolbar select:focus {
+        outline: none;
+        border:0;
+    }
+
+    /* استایل برای option‌ها */
+    #toolbar select option {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    /* ===== Toolbar ===== */
+    #toolbar {
+        padding: 0px 5px 35px;
+        text-align: center;
+    }
 
     #toolbar label {
         font-size: .92rem;
         color: #666;
     }
 
-    #toolbar select, #toolbar input {
+    #toolbar, #toolbar input {
         padding: 6px 12px;
         border: 0;
         font-family: 'IRANSansX';
@@ -255,7 +282,7 @@ html, body, #app, #map {
     }
 
     #toolbar {
-        background: #15161a;
+        background: #1e2830;
         border-color: #2a2b31
     }
 
@@ -263,8 +290,8 @@ html, body, #app, #map {
             color: #aaa
         }
 
-        #toolbar select, #toolbar input {
-            background: #1b1c22;
+        #toolbar, #toolbar input {
+            background: #1e2830;
             color: #ddd;
             border-color: #2a2b31
         }
