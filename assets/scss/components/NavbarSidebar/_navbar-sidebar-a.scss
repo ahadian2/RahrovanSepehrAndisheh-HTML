@@ -13,26 +13,22 @@ body.no-scroll {
 .navbar-sidebar-a {
     position: fixed;
     top: 0;
-    /*!rtl:begin:ignore*/
-    right: -280px;
-    left: auto;
-    /*!rtl:end:ignore*/
+    left: -280px;
+    right: auto;
     width: 280px;
     max-width: 90vw;
     height: 100vh;
     background-color: var(--bs-sec-bg-light);
     color: var(--bs-txt-muted);
     box-shadow: -6px 0 18px rgba(0,0,0,.25);
-    /*!rtl:ignore*/
-    transition: right .3s ease;
+    transition: left .3s ease;
     z-index: 1095;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     &.is-open {
-        /*!rtl:ignore*/
-        right: 0;
+        left: 0;
     }
 
     &__overlay {
@@ -302,9 +298,3 @@ body.no-scroll {
         }
     }
 }
-
-/*
-  مثال:
-  /*!rtl:ignore* / right: 0;
-  /*!rtl:ignore* / left: auto;
-*/

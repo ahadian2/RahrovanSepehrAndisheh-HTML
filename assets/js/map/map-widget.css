@@ -49,12 +49,16 @@ html, body, #app, #map {
     cursor: pointer;
     background-color: #0f3461;
     color: #fff;
-    text-align: center;
     font-family: 'IRANSansX';
     padding: 15px 5px;
     outline: none;
     margin-bottom: 30px;
     font-size: 0.85rem;
+    -webkit-appearance: none; /* حذف استایل بومی Safari */
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    text-align-last: center;
 }
 
     /* فوکوس */
